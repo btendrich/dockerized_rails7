@@ -1,0 +1,87 @@
+<div id="<%= dom_id employee %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">First name:</strong>
+    <%= employee.first_name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Last name:</strong>
+    <%= employee.last_name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Address1:</strong>
+    <%= employee.address1 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Address2:</strong>
+    <%= employee.address2 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">City:</strong>
+    <%= employee.city %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">State:</strong>
+    <%= employee.state %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Zip:</strong>
+    <%= employee.zip %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Phone:</strong>
+    <%= employee.phone %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Affiliation organization:</strong>
+    <%= employee.affiliation_organization %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Affiliation card number:</strong>
+    <%= employee.affiliation_card_number %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Payroll code:</strong>
+    <%= employee.payroll_code %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Dob:</strong>
+    <%= employee.dob %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Notes:</strong>
+    <%= employee.notes %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Classification:</strong>
+    <%= employee.classification %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Payroll code:</strong>
+    <%= employee.payroll_code %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Payroll active:</strong>
+    <%= employee.payroll_active %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this employee", employee, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this employee', edit_employee_path(employee), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
