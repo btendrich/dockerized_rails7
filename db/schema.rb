@@ -30,6 +30,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_22_193737) do
     t.text "notes"
     t.string "payroll_code"
     t.boolean "payroll_active"
+    t.string "keycard_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

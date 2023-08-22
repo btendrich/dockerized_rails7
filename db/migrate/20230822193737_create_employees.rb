@@ -16,6 +16,7 @@ class CreateEmployees < ActiveRecord::Migration[7.0]
       t.text :notes
       t.string :payroll_code
       t.boolean :payroll_active
+      t.string :keycard_number
 
       t.timestamps
     end

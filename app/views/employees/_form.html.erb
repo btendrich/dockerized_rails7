@@ -1,4 +1,4 @@
-<%= form_with(model: employee, class: "contents") do |form| %>
+<%= form_with(model: employee, class: "w-full max-w-lg") do |form| %>
   <% if employee.errors.any? %>
     <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
       <h2><%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
@@ -11,87 +11,147 @@
     </div>
   <% end %>
 
-  <div class="my-5">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :first_name, 'First Name', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :first_name, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :last_name, 'Last Name', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :last_name, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :address1 %>
-    <%= form.text_field :address1, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :address1, 'Address Line 1', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :address1, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :address2 %>
-    <%= form.text_field :address2, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :address2, 'Address Line 2', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :address2, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :city %>
-    <%= form.text_field :city, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :city, 'City', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :city, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :state %>
-    <%= form.text_field :state, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :state, 'State', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :state, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :zip %>
-    <%= form.text_field :zip, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :zip, 'Zip Code', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :zip, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :phone %>
-    <%= form.text_field :phone, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :phone, 'Phone', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :phone, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :affiliation_organization %>
-    <%= form.text_field :affiliation_organization, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :affiliation_organization, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :affiliation_organization, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :affiliation_card_number %>
-    <%= form.text_field :affiliation_card_number, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :affiliation_card_number, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :affiliation_card_number, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :payroll_code %>
-    <%= form.text_field :payroll_code, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :payroll_code, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :payroll_code, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :dob %>
-    <%= form.date_field :dob, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :payroll_active, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <input class="mr-2 leading-tight" type="checkbox">
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :notes %>
-    <%= form.text_area :notes, rows: 4, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :dob, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.date_field :dob, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :classification %>
-    <%= form.text_field :classification, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :classification, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :classification, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :payroll_code %>
-    <%= form.text_field :payroll_code, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <%= form.label :notes, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_area :notes, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    </div>
   </div>
 
-  <div class="my-5">
-    <%= form.label :payroll_active %>
-    <%= form.check_box :payroll_active, class: "block mt-2 h-5 w-5" %>
-  </div>
-
-  <div class="inline">
-    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  <div class="md:flex md:items-center">
+    <div class="md:w-1/3"></div>
+    <div class="md:w-2/3">
+      <%= form.button class: "shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded", type: 'submit' %>
+    </div>
   </div>
 <% end %>
