@@ -1,8 +1,13 @@
+<div class="mx-auto w-full pb-6 text-right">
+    <%= link_to 'Show Record', @employee, class: "mt-2 rounded-lg py-2 px-2 bg-blue-300 inline-block font-medium" %>
+    <%= link_to 'Employee List', employees_path, class: "ml-2 rounded-lg py-2 px-2 bg-gray-100 inline-block font-medium" %>
+</div>
+
+<div class="mx-auto w-full pb-6">
+	<span class="text-4xl font-semibold">Employee: <%= @employee.full_name %></span>
+</div>
+
+
 <div class="mx-auto md:w-2/3 w-full">
-  <h1 class="font-bold text-4xl">Editing employee</h1>
-
   <%= render "form", employee: @employee %>
-
-  <%= link_to "Show this employee", @employee, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-  <%= link_to "Back to employees", employees_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
 </div>

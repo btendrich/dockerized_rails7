@@ -1,157 +1,199 @@
 <%= form_with(model: employee, class: "w-full max-w-lg") do |form| %>
-  <% if employee.errors.any? %>
-    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
-      <h2><%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
 
-      <ul>
-        <% employee.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-
-  <div class="md:flex md:items-center mb-6">
+  <div class="md:flex md:items-center mt-6 mb-1">
     <div class="md:w-1/3">
       <%= form.label :first_name, 'First Name', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
     </div>
     <div class="md:w-2/3">
-      <%= form.text_field :first_name, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+      <%= form.text_field :first_name, maxlength: 32, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:first_name).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
     </div>
   </div>
-
-  <div class="md:flex md:items-center mb-6">
+  <div class="md:flex md:items-center mt-0 mb-1">
     <div class="md:w-1/3">
       <%= form.label :last_name, 'Last Name', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
     </div>
     <div class="md:w-2/3">
-      <%= form.text_field :last_name, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+      <%= form.text_field :last_name, maxlength: 32, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:last_name).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
     </div>
   </div>
-
-  <div class="md:flex md:items-center mb-6">
-    <div class="md:w-1/3">
-      <%= form.label :address1, 'Address Line 1', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
-    </div>
-    <div class="md:w-2/3">
-      <%= form.text_field :address1, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
-    </div>
-  </div>
-
-  <div class="md:flex md:items-center mb-6">
-    <div class="md:w-1/3">
-      <%= form.label :address2, 'Address Line 2', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
-    </div>
-    <div class="md:w-2/3">
-      <%= form.text_field :address2, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
-    </div>
-  </div>
-
-  <div class="md:flex md:items-center mb-6">
-    <div class="md:w-1/3">
-      <%= form.label :city, 'City', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
-    </div>
-    <div class="md:w-2/3">
-      <%= form.text_field :city, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
-    </div>
-  </div>
-
-  <div class="md:flex md:items-center mb-6">
-    <div class="md:w-1/3">
-      <%= form.label :state, 'State', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
-    </div>
-    <div class="md:w-2/3">
-      <%= form.text_field :state, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
-    </div>
-  </div>
-
-  <div class="md:flex md:items-center mb-6">
-    <div class="md:w-1/3">
-      <%= form.label :zip, 'Zip Code', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
-    </div>
-    <div class="md:w-2/3">
-      <%= form.text_field :zip, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
-    </div>
-  </div>
-
-  <div class="md:flex md:items-center mb-6">
-    <div class="md:w-1/3">
-      <%= form.label :phone, 'Phone', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
-    </div>
-    <div class="md:w-2/3">
-      <%= form.text_field :phone, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
-    </div>
-  </div>
-
-  <div class="md:flex md:items-center mb-6">
-    <div class="md:w-1/3">
-      <%= form.label :affiliation_organization, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
-    </div>
-    <div class="md:w-2/3">
-      <%= form.text_field :affiliation_organization, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
-    </div>
-  </div>
-
-  <div class="md:flex md:items-center mb-6">
-    <div class="md:w-1/3">
-      <%= form.label :affiliation_card_number, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
-    </div>
-    <div class="md:w-2/3">
-      <%= form.text_field :affiliation_card_number, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
-    </div>
-  </div>
-
-  <div class="md:flex md:items-center mb-6">
-    <div class="md:w-1/3">
-      <%= form.label :payroll_code, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
-    </div>
-    <div class="md:w-2/3">
-      <%= form.text_field :payroll_code, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
-    </div>
-  </div>
-
-  <div class="md:flex md:items-center mb-6">
-    <div class="md:w-1/3">
-      <%= form.label :payroll_active, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
-    </div>
-    <div class="md:w-2/3">
-      <input class="mr-2 leading-tight" type="checkbox">
-    </div>
-  </div>
-
-  <div class="md:flex md:items-center mb-6">
+  <div class="md:flex md:items-center mt-0 mb-1">
     <div class="md:w-1/3">
       <%= form.label :dob, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
     </div>
     <div class="md:w-2/3">
       <%= form.date_field :dob, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:dob).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
     </div>
   </div>
 
+  <div class="md:flex md:items-center mt-6 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :address1, 'Address Line 1', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :address1, maxlength: 255, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:address1).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :address2, 'Address Line 2', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :address2, maxlength: 255, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:address2).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :city, 'City', maxlength: 64, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :city, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:city).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :state, 'State', maxlength: 2, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :state, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:state).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :zip, 'Zip Code', maxlength: 10, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :zip, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:zip).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
 
-  <div class="md:flex md:items-center mb-6">
+  <div class="md:flex md:items-center mt-6 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :phone, 'Phone', maxlength: 10, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :phone, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:phone).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :email, 'E-Mail', maxlength: 255, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :email, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:email).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+
+  <div class="md:flex md:items-center mt-6 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :affiliation_organization, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+			<%= form.select :affiliation_organization, Employee::ORGANIZATIONS, {}, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:affiliation_organization).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :affiliation_card_number, maxlength: 64, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :affiliation_card_number, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:affiliation_card_number).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+
+  <div class="md:flex md:items-center mt-6 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :payroll_code, maxlength: 64, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :payroll_code, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:payroll_code).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :payroll_active, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+			<%= form.check_box :payroll_active, class: 'bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500' %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :keycard_number, maxlength: 64, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :keycard_number, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:keycard_number).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
     <div class="md:w-1/3">
       <%= form.label :classification, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
     </div>
     <div class="md:w-2/3">
-      <%= form.text_field :classification, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<%= form.select :classification, Employee::CLASSIFICATIONS, {}, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:classification).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
     </div>
   </div>
 
-  <div class="md:flex md:items-center mb-6">
+  <div class="md:flex md:items-center mt-6 mb-1">
     <div class="md:w-1/3">
       <%= form.label :notes, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
     </div>
     <div class="md:w-2/3">
       <%= form.text_area :notes, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% employee.errors.full_messages_for(:notes).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
     </div>
   </div>
 
   <div class="md:flex md:items-center">
     <div class="md:w-1/3"></div>
     <div class="md:w-2/3">
-      <%= form.button class: "shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded", type: 'submit' %>
+      <%= form.button class: "shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded", type: 'submit' %>
     </div>
   </div>
 <% end %>

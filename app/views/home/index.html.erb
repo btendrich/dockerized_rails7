@@ -2,3 +2,56 @@
   <h1 class="font-bold text-4xl">Home#index</h1>
   <p>Find me in app/views/home/index.html.erb</p>
 </div>
+
+<div data-controller="attempt" class="bg-green-100 m-6 p-2">
+  <input data-attempt-target="name" type="text">
+  <button data-action="click->attempt#greet" class="bg-red-100">Greet</button>
+	<div data-attempt-target="output">
+	</div>
+</div>
+
+<div class="bg-grey-300" data-controller="attempt">
+	<div class="bg-gray-100 text-right w-48 h-8 inline-block m-0 p-0 text-xs">
+		Name
+	</div>
+	<% time = Time.now.midnight %>
+	<% 0.upto(27) do |add| %>
+	<button class="bg-gray-100 text-center w-8 h-8 inline-block m-0 p-0 text-xs"><%= (time + add.hours).strftime('%l%P') %></button>
+	<% end %>
+	<br/>
+	
+	<% 10.times do %>
+	<div class="bg-gray-100 text-right w-48 h-8 inline-block m-0 p-0 text-xs">
+		Name
+	</div>
+	<% 0.upto(27) do |add| %>
+	<button class="bg-gray-100 text-center w-8 h-8 inline-block m-0 p-0 text-xs" data-action="click->attempt#increment">-</button>
+	<% end %>
+	
+	<% end %>
+</div>
+
+<div class="bg-grey-300" data-controller="attempt">
+	<div class="bg-gray-100 text-right w-48 h-8 inline-block m-0 p-0 text-xs">
+		Name
+	</div>
+	<% time = Time.now.midnight %>
+	<% 0.upto(27) do |add| %>
+	<div class="bg-gray-100 text-center w-8 h-8 inline-block m-0 p-0 text-xs"><%= (time + add.hours).strftime('%l%P') %></div>
+	<% end %>
+	<br/>
+	
+	<% 10.times do %>
+	<div class="bg-gray-100 text-right w-48 h-8 inline-block m-0 p-0 text-xs">
+		Name
+	</div>
+	<% 0.upto(27) do |add| %>
+	<button class="bg-gray-100 text-center w-8 h-8 inline-block m-0 p-0 text-xs" data-action="click->attempt#greet">-</div>
+	<% end %>
+	
+	<% end %>
+</div>
+
+<div class="m-5 p-5">
+</div>
+
