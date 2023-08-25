@@ -1,57 +1,58 @@
-<div>
-  <h1 class="font-bold text-4xl">Home#index</h1>
+<div class="mb-12">
+  <h1 class="font-bold text-4xl">Playground..!.</h1>
   <p>Find me in app/views/home/index.html.erb</p>
 </div>
 
-<div data-controller="attempt" class="bg-green-100 m-6 p-2">
-  <input data-attempt-target="name" type="text">
-  <button data-action="click->attempt#greet" class="bg-red-100">Greet</button>
-	<div data-attempt-target="output">
-	</div>
-</div>
 
-<div class="bg-grey-300" data-controller="attempt">
-	<div class="bg-gray-100 text-right w-48 h-8 inline-block m-0 p-0 text-xs">
-		Name
-	</div>
-	<% time = Time.now.midnight %>
-	<% 0.upto(27) do |add| %>
-	<button class="bg-gray-100 text-center w-8 h-8 inline-block m-0 p-0 text-xs"><%= (time + add.hours).strftime('%l%P') %></button>
-	<% end %>
-	<br/>
-	
-	<% 10.times do %>
-	<div class="bg-gray-100 text-right w-48 h-8 inline-block m-0 p-0 text-xs">
-		Name
-	</div>
-	<% 0.upto(27) do |add| %>
-	<button class="bg-gray-100 text-center w-8 h-8 inline-block m-0 p-0 text-xs" data-action="click->attempt#increment">-</button>
-	<% end %>
-	
-	<% end %>
-</div>
 
-<div class="bg-grey-300" data-controller="attempt">
-	<div class="bg-gray-100 text-right w-48 h-8 inline-block m-0 p-0 text-xs">
-		Name
-	</div>
-	<% time = Time.now.midnight %>
-	<% 0.upto(27) do |add| %>
-	<div class="bg-gray-100 text-center w-8 h-8 inline-block m-0 p-0 text-xs"><%= (time + add.hours).strftime('%l%P') %></div>
-	<% end %>
-	<br/>
-	
-	<% 10.times do %>
-	<div class="bg-gray-100 text-right w-48 h-8 inline-block m-0 p-0 text-xs">
-		Name
-	</div>
-	<% 0.upto(27) do |add| %>
-	<button class="bg-gray-100 text-center w-8 h-8 inline-block m-0 p-0 text-xs" data-action="click->attempt#greet">-</div>
-	<% end %>
-	
-	<% end %>
-</div>
+<div data-controller="attempt">
 
-<div class="m-5 p-5">
-</div>
+	<button data-action="click->attempt#clear_values" class="w-32 border bg-red-100">Clear Values</button>
+	<button data-action="click->attempt#basic_shifts" class="w-32 border bg-blue-100">Basic Shifts</button>
+	<button data-action="click->attempt#use_rates" id="basic" class="w-32 border bg-emerald-100">Basic Rates</button>
+	<button data-action="click->attempt#use_rates" id="extra" class="w-32 border bg-lime-100">Extra Rates</button>
+	<button data-action="click->attempt#use_rates" id="other" class="w-32 border bg-amber-100">Other Rates</button>
 
+	<div class="bg-slate-300 w-full p-0 mx-0 my-2 p-1">
+		<div class="block">
+
+			<button class="bg-gray-100 text-center w-6 h-8 inline-block text-sm p-0 m-0">
+				<%= icon( 'fa-solid', 'chevron-down' )%>
+			</button>
+
+			<button class="bg-gray-100 text-center w-48 h-8 inline-block text-sm p-0 m-0">
+				Name
+			</button>
+
+			<% time = Time.now.midnight %>
+			<% 0.upto(27) do |add| %>
+				<% if add > 7 and add < 16 %>
+					<button class="bg-yellow-100 text-center w-8 h-8 inline-block align-top text-sm font-semibold p-0 m-0"><%= (time + add.hours).strftime('%l%P').chop %></button>
+				<% elsif add > 15 and add < 24 %>
+					<button class="bg-rose-100 text-center w-8 h-8 inline-block align-top text-sm font-semibold p-0 m-0"><%= (time + add.hours).strftime('%l%P').chop %></button>
+				<% else %>
+					<button class="bg-gray-100 text-center w-8 h-8 inline-block align-top text-sm font-semibold p-0 m-0"><%= (time + add.hours).strftime('%l%P').chop %></button>
+				<% end %>
+			<% end %>
+		</div>
+
+		<% 10.times do |row| %>
+			<div class="block px-0 pt-1">
+				<button class="bg-gray-100 text-center w-6 h-8 inline-block text-sm m-0 p-0" title="Test Title" data-action="click->attempt#copy_employee_down" id="row-<%=row%>">
+					<%= icon( 'fa-solid', 'chevron-down' )%>
+				</button>
+				<%= collection_select( :object, :method, Employee.active.order(:classification).order(:last_name).order(:first_name), :id, :full_name, {prompt: true}, {id: "row-#{row}", class: "bg-gray-100 align-top border-0 h-8 w-48 inline-block text-xs p-0 m-0", data: {attempt_target: "employee"}})%>
+
+				<% time = Time.now.midnight %>
+				<% 0.upto(27) do |hour| %>
+					<button class="bg-gray-100 text-center w-8 h-8 inline-block text-sm p-0 m-0" title="Test Title" data-action="click->attempt#increment change->attempt#formatHour" data-attempt-target="hour" id="row-<%=row%>-hour-<%=hour%>">-</button>
+				<% end %>
+				<button class="bg-gray-100 text-center w-6 h-8 inline-block text-sm p-0 m-0" title="Test Title" data-action="click->attempt#copy_hours_down" id="row-<%=row%>">
+					<%= icon( 'fa-solid', 'turn-down' )%>
+				</button>
+			</div>
+		<% end %>
+
+	</div>
+
+</div>

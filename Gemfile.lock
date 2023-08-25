@@ -105,6 +105,8 @@ GEM
       warden (~> 1.2.3)
     erubi (1.12.0)
     ffi (1.15.5)
+    font-awesome-sass (6.4.2)
+      sassc (~> 2.0)
     foreman (0.87.2)
     geom2d (0.4.1)
     globalid (1.1.0)
@@ -282,6 +284,7 @@ DEPENDENCIES
   capybara
   debug
   devise (~> 4.9)
+  font-awesome-sass (~> 6.4.2)
   foreman (~> 0.87.2)
   hexapdf (~> 0.33.0)
   importmap-rails

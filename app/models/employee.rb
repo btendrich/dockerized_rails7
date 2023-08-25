@@ -37,7 +37,8 @@ class Employee < ApplicationRecord
   validates :keycard_number, length: {maximum: 64}
   validates :dob, comparison: { less_than_or_equal_to: (Date.today - 18.years), message: 'must be at least 18 years old' }, unless: Proc.new { |a| a.dob.blank? }
   
-  
+  scope :active, -> { where(payroll_active: true) }
+  scope :inactive, -> { where(payroll_active: false) }  
   
   def full_name
     if first_name.empty? 

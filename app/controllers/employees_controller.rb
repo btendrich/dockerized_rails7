@@ -4,7 +4,13 @@ class EmployeesController < ApplicationController
   # GET /employees or /employees.json
   def index
     #@employees = Employee.all
-    @pagy, @employees = pagy(Employee.all.order(:classification).order(:last_name).order(:first_name), items: 25)
+    if filter_status == 'active'
+      @pagy, @employees = pagy(Employee.active.where("last_name ILIKE ? OR first_name ILIKE ?", search_name, search_name).order(sort_sql).order(:last_name).order(:first_name), items: 25)
+    elsif filter_status == 'inactive'
+      @pagy, @employees = pagy(Employee.inactive.where("last_name ILIKE ? OR first_name ILIKE ?", search_name, search_name).order(sort_sql).order(:last_name).order(:first_name), items: 25)
+    else
+      @pagy, @employees = pagy(Employee.where("last_name ILIKE ? OR first_name ILIKE ?", search_name, search_name).order(sort_sql).order(:last_name).order(:first_name), items: 25)
+    end
   end
 
   # GET /employees/1 or /employees/1.json
@@ -177,6 +183,18 @@ class EmployeesController < ApplicationController
     # Only allow a list of trusted parameters through.
     def employee_params
       params.require(:employee).permit(:first_name, :last_name, :address1, :address2, :city, :state, :zip, :phone, :affiliation_organization, :affiliation_card_number, :payroll_code, :dob, :notes, :classification, :payroll_code, :payroll_active, :email, :keycard_number)
-      params.require(:generate).permit(:ssn)
     end
+    
+    def search_name
+        params[:search_name].nil? ? "%" : "%#{params[:search_name]}%"
+    end
+    
+    def sort_field
+      ['last_name', 'first_name'].include?(params[:sort_field]) ? params[:sort_field] : 'classification'
+    end
+
+    def filter_status
+      params.fetch(:status,'active')
+    end
+
 end

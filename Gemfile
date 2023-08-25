@@ -83,3 +83,5 @@ gem "pagy", "~> 6.0"
 gem "hexapdf", "~> 0.33.0"
 
 gem "foreman", "~> 0.87.2"
+
+gem "font-awesome-sass", "~> 6.4.2"
