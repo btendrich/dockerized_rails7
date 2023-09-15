@@ -1,0 +1,2 @@
+class RateClassification < ApplicationRecord
+end

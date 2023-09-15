@@ -1,0 +1,2 @@
+class EmployeeClassification < ApplicationRecord
+end

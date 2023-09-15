@@ -84,15 +84,15 @@
   			<% if [12,13].include? add %>
 					<button class="bg-yellow-300 text-center w-8 h-8 inline-block align-top text-sm font-semibold p-0 m-0"><%= (time + add.hours).strftime('%l%P').chop %></button>
 				<% elsif [17,18].include? add %>
-					<button class="bg-rose-300 text-center w-8 h-8 inline-block align-top text-sm font-semibold p-0 m-0"><%= (time + add.hours).strftime('%l%P').chop %></button>
+					<button class="bg-sky-300 text-center w-8 h-8 inline-block align-top text-sm font-semibold p-0 m-0"><%= (time + add.hours).strftime('%l%P').chop %></button>
 				<% elsif [5].include? add %>
-					<button class="bg-gray-300 text-center w-8 h-8 inline-block align-top text-sm font-semibold p-0 m-0"><%= (time + add.hours).strftime('%l%P').chop %></button>
+					<button class="bg-violet-300 text-center w-8 h-8 inline-block align-top text-sm font-semibold p-0 m-0"><%= (time + add.hours).strftime('%l%P').chop %></button>
 				<% elsif add > 7 and add < 16 %>
 					<button class="bg-yellow-100 text-center w-8 h-8 inline-block align-top text-sm font-semibold p-0 m-0"><%= (time + add.hours).strftime('%l%P').chop %></button>
 				<% elsif add > 15 and add < 24 %>
-					<button class="bg-rose-100 text-center w-8 h-8 inline-block align-top text-sm font-semibold p-0 m-0"><%= (time + add.hours).strftime('%l%P').chop %></button>
+					<button class="bg-sky-200 text-center w-8 h-8 inline-block align-top text-sm font-semibold p-0 m-0"><%= (time + add.hours).strftime('%l%P').chop %></button>
 				<% else %>
-					<button class="bg-gray-100 text-center w-8 h-8 inline-block align-top text-sm font-semibold p-0 m-0"><%= (time + add.hours).strftime('%l%P').chop %></button>
+					<button class="bg-violet-100 text-center w-8 h-8 inline-block align-top text-sm font-semibold p-0 m-0"><%= (time + add.hours).strftime('%l%P').chop %></button>
 				<% end %>
 			<% end %>
 		</div>
