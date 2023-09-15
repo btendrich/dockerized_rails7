@@ -1,0 +1,2 @@
+class TimePeriod < ApplicationRecord
+end

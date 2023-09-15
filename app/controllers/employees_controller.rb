@@ -194,7 +194,7 @@ class EmployeesController < ApplicationController
     end
 
     def filter_status
-      params.fetch(:status,'active')
+      params.permit(:status).fetch(:status,'active')
     end
 
 end

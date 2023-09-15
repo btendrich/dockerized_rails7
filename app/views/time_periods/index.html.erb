@@ -1,0 +1,34 @@
+<%- title 'List Time Periods' %>
+<div class="container mx-auto block">
+	<table class="table-auto w-full">
+	  <thead>
+	    <tr class='bg-teal-100'>
+	      <th class='p-3'><%= sortable_link_for :name, type: :alpha %></th>
+	      <th class='p-3'><%= sortable_link_for :begins %></th>
+	      <th class='p-3'><%= sortable_link_for :ends %></th>
+	      <th class='p-3'><%= sortable_link_for :description %></th>
+	      <th class='p-3 w-1/5 text-right'><%= link_to 'New Time Period', new_time_period_path, class: 'bg-teal-600 text-gray-100 p-2 mr-2 hover:bg-teal-700 rounded-xl'%></th>
+	    </tr>
+	  </thead>
+	  <tbody>
+			<% @time_periods.each do |time_period| %>
+	    <tr class='bg-gray-100 hover:bg-gray-200'>
+	      <td class='p-1.5'><%= time_period.name %></td>
+	      <td class='p-1.5'><%= time_period.begins %></td>
+	      <td class='p-1.5'><%= time_period.ends %></td>
+	      <td class='p-1.5'><%= time_period.description %></td>
+	      <td class='p-1.5 text-right'>
+	      	<%= link_to 'Edit', edit_time_period_path(time_period), class: 'bg-blue-200 p-1 mr-1 hover:bg-blue-300 rounded-md'%>
+	      	<%= link_to 'Destroy', time_period_path(time_period), data: { "turbo-method": :delete, turbo_confirm: 'Are you sure?' }, class: 'bg-red-200 p-1 mr-1 hover:bg-red-300 rounded-md'%>
+				</td>
+	    </tr>
+			<% end %>
+	  </tbody>
+	</table>
+
+<div class="flex mt-3 items-center justify-center space-x-4 w-full">
+  <%== pagy_nav(@pagy) %>
+</div>
+<p class="text-center mt-3 text-gray-500"><%== pagy_info @pagy %></p>
+
+</div>

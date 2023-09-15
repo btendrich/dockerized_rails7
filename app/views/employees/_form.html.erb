@@ -95,7 +95,7 @@
       <%= form.label :phone, 'Phone', maxlength: 10, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
     </div>
     <div class="md:w-2/3">
-      <%= form.text_field :phone, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+      <%= form.telephone_field :phone, pattern: '\d{3}\-\d{3}\-\d{4}', class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
 			<% employee.errors.full_messages_for(:phone).each do |error_message| %>
 			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
 			<% end %>
@@ -106,7 +106,7 @@
       <%= form.label :email, 'E-Mail', maxlength: 255, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
     </div>
     <div class="md:w-2/3">
-      <%= form.text_field :email, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+      <%= form.email_field :email, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
 			<% employee.errors.full_messages_for(:email).each do |error_message| %>
 			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
 			<% end %>

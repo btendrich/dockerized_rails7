@@ -7,7 +7,8 @@
           <%= form_tag(request.path, method: "get", class: "inline", data: {controller: 'employees'}) do |f| %>
 						<%= select_tag :status, options_for_select({'Active Employees' => 'active','Inactive Employees' => 'inactive','All Employees' => 'all'}, selected: params.permit(:status)[:status]), class: "text-sm", data: {employees_target: 'status', action: 'employees#filter_status_update'}%>
           <% end %>
-          <%= form_tag(request.path, method: "get", class: "inline") do %>
+          <%= form_tag(request.fullpath, method: "get", class: "inline") do %>
+						<%= hidden_field_tag( :status, params[:status] ) %>
             <%= text_field_tag(:search_name, params[:search_name], class: "text-sm", placeholder: "Search...") %>
           <% end %>
 				</th>
@@ -47,4 +48,3 @@
 <p class="text-center mt-3 text-gray-500"><%== pagy_info @pagy %></p>
 
 </div>
-

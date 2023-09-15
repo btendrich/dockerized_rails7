@@ -1,4 +1,4 @@
-
+<%- title "Employee Details - #{@employee.full_name}" %>
 <div class="mx-auto w-full pb-6 text-right">
     <%= link_to 'Edit Record', edit_employee_path(@employee), class: "mt-2 rounded-lg py-2 px-2 bg-blue-300 inline-block font-medium" %>
    	<%= link_to 'Destroy', employee_path(@employee), data: { "turbo-method": :delete, turbo_confirm: 'Are you sure?' }, class: 'ml-1 rounded-lg py-2 px-2 bg-red-300 inline-block font-medium'%>

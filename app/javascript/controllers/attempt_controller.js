@@ -3,7 +3,7 @@ import { useHotkeys } from 'stimulus-use/hotkeys'
 
 // Connects to data-controller="attempt"
 export default class extends Controller {
-	static targets = [ "hour", "employee", "rateButton", "hourQuantityIndicator" ];
+	static targets = [ "hour", "employee", "rateButton", "hourQuantityIndicator", "rateIndicator", "json_output" ];
 	rate_options = ['-']
 	rate_descriptions = ['']
 	backgroundColorsUsed = [
@@ -13,14 +13,14 @@ export default class extends Controller {
 		'bg-gray-400', 'bg-emerald-400', 'bg-lime-400', 'bg-amber-400',
 	]
 	
+	selectedRates = ['-', 'B1', 'B2', 'B3','BP', 'BPS', 'B1m','B2m','B3m','S2','S3','S2m','S3m'];
+	selectedRateGroup = 'basic-0';
+	
+	
 	hourSelectQuantity = 1;
 	
 	connect() {
     useHotkeys(this, {
-      b: [this.select_basic_rates],
-      e: [this.select_extra_rates],
-      o: [this.select_other_rates],
-      c: [this.select_clear_rates],
       1: [this.select_hour_quantity_from_keyboard],
       2: [this.select_hour_quantity_from_keyboard],
       3: [this.select_hour_quantity_from_keyboard],
@@ -31,8 +31,60 @@ export default class extends Controller {
       8: [this.select_hour_quantity_from_keyboard],
       9: [this.select_hour_quantity_from_keyboard],
     })
-		this.basic_shifts();
 		this.formatHourSelectIndicators();
+		this.formatRateSelectIndicators();
+	}
+	
+	
+	rate_groups = {
+		basic: {
+			0: ['-', 'B1', 'B2', 'B3','BP', 'BPS', 'B1m','B2m','B3m','S2','S3','S2m','S3m'],
+			1: ['B1'],
+			2: ['B2'],
+			3: ['B3'],
+			4: ['BP'],
+			5: ['BPS'],
+			6: ['B1m'],
+			7: ['B2m'],
+			8: ['B3m'],
+			9: ['S2'],
+			10: ['S3'],
+			11: ['S2m'],
+			12: ['S3m'],
+		},
+		extra: {
+			0: ['-', 'E1', 'E2', 'E3','E4', 'E5', 'EP','E1m','E2m','E3m','E4m','E5m','EPS'],
+			1: ['E1'],
+			2: ['E2'],
+			3: ['E3'],
+			4: ['E4'],
+			5: ['E5'],
+			6: ['EP'],
+			7: ['E1m'],
+			8: ['E2m'],
+			9: ['E3m'],
+			10: ['E4m'],
+			11: ['E5m'],
+			12: ['EPS'],
+		},
+		other: {
+			0: ['-', 'C1', 'C2', 'C3','C1m','C2m','C3m'],
+			1: ['C1'],
+			2: ['C2'],
+			3: ['C3'],
+			4: ['-'],
+			5: ['C1m'],
+			6: ['C2m'],
+			7: ['C3m'],
+		},
+	};
+	
+	select_rate_group() {
+		this.selectedRateGroup = event.target.id
+		var group = event.target.id.match(/^(\w+)-(\d+)$/)[1];
+		var number = parseInt(event.target.id.match(/^(\w+)-(\d+)$/)[2]);
+		this.selectedRates = this.rate_groups[group][number];
+		this.formatRateSelectIndicators();
 	}
 	
 	select_hour_quantity_from_button() {
@@ -40,21 +92,7 @@ export default class extends Controller {
 		this.hourSelectQuantity = newQuantity;
 		this.formatHourSelectIndicators();
 	}
-	
-	formatHourSelectIndicators() {
-		this.hourQuantityIndicatorTargets.forEach((element) => {
-			element.classList.remove('bg-purple-200')
-			element.classList.add('bg-purple-100')
-		})
-		var hourIndicator = this.hourQuantityIndicatorTargets.find((element) => element.id == `select-hour-quantity-${this.hourSelectQuantity}`);
-		hourIndicator.classList.remove('bg-purple-100')
-		hourIndicator.classList.add('bg-purple-200')		
-	}
-	
-	formatRateSelectIndicators() {
-		
-	}
-	
+
 	select_hour_quantity_from_keyboard(event) {
 		const quantity = parseInt(event.key)
 		if( quantity < 1 || quantity > 9) {
@@ -65,40 +103,11 @@ export default class extends Controller {
 		this.formatHourSelectIndicators();
 	}
 	
-	select_basic_rates() {
-		this.rate_options = ['-','B1','B2','B3','BP','BPS','B1m','B2m','B3m'];
-		this.rate_descriptions = ['', 'Basic 1x', 'Basic 1.5x', 'Basic 2x', 'Basic Performance', 'Basic Premium Performance', 'Basic 1x Meal Penalty', 'Basic 1.5x Meal Penalty', 'Basic 2x Meal Penalty']
-	}
-	select_extra_rates() {
-		this.rate_options = ['-','E1','E2','E3','E4','E5','EP','EPS','E1m','E2m','E3m','E4m','E5m'];
-	}
-	select_other_rates() {
-		this.rate_options = ['-','C1','C2','C3','C1m','C2m','C3m','S2','S3','S2m','S3m'];
-	}
-	select_clear_rates() {
-		this.rate_options = ['-'];
-	}
-
-	increment() {
-		const currentValueMatcher = (element) => element == event.target.textContent;
-		var current = this.rate_options.findIndex(currentValueMatcher)
-		var next = current + 1
-
-		if( next >= this.rate_options.length) {
-			next = 0
-		}
-
-		event.target.textContent = this.rate_options[next]
-		event.target.title = `New Value For ID ${event.target.id}`
-		
-		this.formatHours();
-	}
-	
 	hourClicked() {
 		const currentValueMatcher = (element) => element == event.target.textContent;
-		var current = this.rate_options.findIndex(currentValueMatcher)
+		var current = this.selectedRates.findIndex(currentValueMatcher)
 		var next = current + 1
-		if( next >= this.rate_options.length) {
+		if( next >= this.selectedRates.length) {
 			next = 0
 		}
 
@@ -109,12 +118,14 @@ export default class extends Controller {
 
 		for( offset = 0; offset < this.hourSelectQuantity; offset++) {
 			var targetElement = this.hourTargets.find((element) => element.id == `row-${triggeringRow}-hour-${triggeringHour+offset}`)
-			targetElement.textContent = this.rate_options[next]
+			targetElement.textContent = this.selectedRates[next]
 		}
 		
 		this.formatHours();
 	}
 	
+
+////////////////////////////////////// formatting updaters
 	formatHours() {
 		this.hourTargets.forEach((element) => {
 			this.backgroundColorsUsed.forEach((color) => {
@@ -138,7 +149,7 @@ export default class extends Controller {
 					break;
 				}
 				case 'S': {
-					color = 'amber';
+					color = 'emerald';
 					break;
 				}
 			}
@@ -155,6 +166,14 @@ export default class extends Controller {
 					var intensity = 300;
 					break;
 				}
+				case '4': {
+					var intensity = 200;
+					break;
+				}
+				case '5': {
+					var intensity = 300;
+					break;
+				}
 				case 'P': {
 					var intensity = 400;
 					break;
@@ -165,6 +184,39 @@ export default class extends Controller {
 		})
 	}
 	
+	rate_group_colors = {
+		basic: 'emerald',
+		extra: 'lime',
+		other: 'amber',
+	}
+	
+	formatRateSelectIndicators() {
+		this.rateIndicatorTargets.forEach((element) => {
+			var group = element.id.match(/^(\w+)-(\d+)$/)[1];
+			element.classList.remove(`bg-${this.rate_group_colors[group]}-100`)
+			element.classList.remove(`bg-${this.rate_group_colors[group]}-300`)
+			if( element.id == this.selectedRateGroup ) {
+				element.classList.add(`bg-${this.rate_group_colors[group]}-300`)
+			} else {
+				element.classList.add(`bg-${this.rate_group_colors[group]}-100`)
+			}
+		})
+	}
+
+	formatHourSelectIndicators() {
+		this.hourQuantityIndicatorTargets.forEach((element) => {
+			element.classList.remove('bg-purple-200')
+			element.classList.add('bg-purple-100')
+		})
+		var hourIndicator = this.hourQuantityIndicatorTargets.find((element) => element.id == `select-hour-quantity-${this.hourSelectQuantity}`);
+		hourIndicator.classList.remove('bg-purple-100')
+		hourIndicator.classList.add('bg-purple-200')		
+	}
+	
+
+
+	//////////////// copy shortcuts
+
 	copy_employee_down() {
 		const triggeringRow = parseInt(event.target.parentElement.id.match(/^row\-(\d+)$/)[1])
 
@@ -193,6 +245,9 @@ export default class extends Controller {
 		this.formatHours();
 	}
 	
+	
+	////////////////// utility shortguts from UI
+	
 	clear_values() {
 		this.hourTargets.forEach((element) => {
 			element.textContent = "-"
@@ -201,24 +256,9 @@ export default class extends Controller {
 		this.formatHours();
 	}
 	
-	basic_shifts() {
+	ath_shifts() {
+		this.clear_values();
 		const shift_hours = [
-			'row-2-hour-8',
-			'row-2-hour-9',
-			'row-2-hour-10',
-			'row-2-hour-11',
-			'row-2-hour-12',
-			'row-2-hour-13',
-			'row-2-hour-14',
-			'row-2-hour-15',
-			'row-1-hour-8',
-			'row-1-hour-9',
-			'row-1-hour-10',
-			'row-1-hour-11',
-			'row-1-hour-12',
-			'row-1-hour-13',
-			'row-1-hour-14',
-			'row-1-hour-15',
 			'row-0-hour-16',
 			'row-0-hour-17',
 			'row-0-hour-18',
@@ -227,6 +267,24 @@ export default class extends Controller {
 			'row-0-hour-21',
 			'row-0-hour-22',
 			'row-0-hour-23',
+
+			'row-1-hour-8',
+			'row-1-hour-9',
+			'row-1-hour-10',
+			'row-1-hour-11',
+			'row-1-hour-12',
+			'row-1-hour-13',
+			'row-1-hour-14',
+			'row-1-hour-15',
+
+			'row-2-hour-8',
+			'row-2-hour-9',
+			'row-2-hour-10',
+			'row-2-hour-11',
+			'row-2-hour-12',
+			'row-2-hour-13',
+			'row-2-hour-14',
+			'row-2-hour-15',
 		]
 		const shift_elements = this.hourTargets.filter((element) => shift_hours.includes(element.id))
 		shift_elements.forEach((element) => {
@@ -235,6 +293,111 @@ export default class extends Controller {
 		this.employeeTargets.find((element) => element.id == "row-0").value = 1
 		this.employeeTargets.find((element) => element.id == "row-1").value = 1486
 		this.employeeTargets.find((element) => element.id == "row-2").value = 3
+		
+		this.formatHours();
+		
+	}
+
+	dgh_shifts() {
+		this.clear_values();
+		const shift_hours = [
+			'row-0-hour-8',
+			'row-0-hour-9',
+			'row-0-hour-10',
+			'row-0-hour-11',
+			'row-0-hour-12',
+			'row-0-hour-13',
+			'row-0-hour-14',
+			'row-0-hour-15',
+
+			'row-1-hour-16',
+			'row-1-hour-17',
+			'row-1-hour-18',
+			'row-1-hour-19',
+			'row-1-hour-20',
+			'row-1-hour-21',
+			'row-1-hour-22',
+			'row-1-hour-23',
+
+			'row-2-hour-8',
+			'row-2-hour-9',
+			'row-2-hour-10',
+			'row-2-hour-11',
+			'row-2-hour-12',
+			'row-2-hour-13',
+			'row-2-hour-14',
+			'row-2-hour-15',
+
+			'row-3-hour-16',
+			'row-3-hour-17',
+			'row-3-hour-18',
+			'row-3-hour-19',
+			'row-3-hour-20',
+			'row-3-hour-21',
+			'row-3-hour-22',
+			'row-3-hour-23',
+
+			'row-4-hour-8',
+			'row-4-hour-9',
+			'row-4-hour-10',
+			'row-4-hour-11',
+			'row-4-hour-12',
+			'row-4-hour-13',
+			'row-4-hour-14',
+			'row-4-hour-15',
+		]
+		const shift_elements = this.hourTargets.filter((element) => shift_hours.includes(element.id))
+		shift_elements.forEach((element) => {
+			element.textContent = 'B1'
+		})
+		this.employeeTargets.find((element) => element.id == "row-0").value = 9999
+		this.employeeTargets.find((element) => element.id == "row-1").value = 462
+		this.employeeTargets.find((element) => element.id == "row-2").value = 223
+		this.employeeTargets.find((element) => element.id == "row-3").value = 742
+		this.employeeTargets.find((element) => element.id == "row-4").value = 1073
+		
+		this.formatHours();
+		
+	}
+	
+	generate_json() {
+		var output = new Object();
+		
+		this.employeeTargets.forEach((element) => {
+			const row = parseInt(element.id.match(/^row\-(\d+)$/)[1])
+			if( element.value != "" ) {
+				output[element.value] = new Object();
+
+				var hour;
+				for( hour = 0; hour < 28; hour++) {
+					var targetHour;
+					targetHour = this.hourTargets.find((element) => element.id == `row-${row}-hour-${hour}`)
+					if(targetHour.textContent != '-') {
+						output[element.value][hour] = targetHour.textContent
+					}
+				}
+			}
+		})
+
+
+		this.json_outputTarget.value = JSON.stringify(output)
+	}
+	
+	read_json() {
+		let object = JSON.parse(this.json_outputTarget.value)
+		
+		this.clear_values();
+		
+		for (const [index, [employee, hours]] of Object.entries(Object.entries(object))) {
+			let targetEmployee = this.employeeTargets.find((element) => element.id == `row-${index}`)
+			targetEmployee.value = employee
+			for (const [index2, [hour, value]] of Object.entries(Object.entries(hours))) {
+				let targetHour = this.hourTargets.find((element) => element.id == `row-${index}-hour-${hour}`)
+				if( targetHour ) {
+					targetHour.textContent = value
+				}
+			}
+		}
 		
 		this.formatHours();
 		

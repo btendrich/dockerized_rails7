@@ -21,21 +21,21 @@ class Employee < ApplicationRecord
   CLASSIFICATIONS = ['Basic', 'Maintenance', 'Extra', 'Retired']
   ORGANIZATIONS = ['None','Local 1','ACT','IATSE','Other']
 
-  validates :first_name, length: {in: 2..32 }
-  validates :last_name, length: {in: 2..32 }
-  validates :classification, inclusion: {in: CLASSIFICATIONS}
-  validates :address1, length: {maximum: 255}
-  validates :address2, length: {maximum: 255}
-  validates :city, length: {maximum: 64}
-  validates :state, length: {maximum: 2}
-  validates :zip, length: {maximum: 10}
-  validates :phone, length: {maximum: 10}
-  validates :email, length: {maximum: 255}
-  validates :affiliation_organization, inclusion: {in: ORGANIZATIONS}
-  validates :affiliation_card_number, length: {maximum: 64}
-  validates :payroll_code, length: {maximum: 64}
-  validates :keycard_number, length: {maximum: 64}
-  validates :dob, comparison: { less_than_or_equal_to: (Date.today - 18.years), message: 'must be at least 18 years old' }, unless: Proc.new { |a| a.dob.blank? }
+#  validates :first_name, length: {in: 2..32 }
+#  validates :last_name, length: {in: 2..32 }
+#  validates :classification, inclusion: {in: CLASSIFICATIONS}
+#  validates :address1, length: {maximum: 255}
+#  validates :address2, length: {maximum: 255}
+#  validates :city, length: {maximum: 64}
+#  validates :state, length: {maximum: 2}
+#  validates :zip, length: {maximum: 10}
+#  validates :phone, length: {maximum: 10}
+#  validates :email, length: {maximum: 255}
+#  validates :affiliation_organization, inclusion: {in: ORGANIZATIONS}
+#  validates :affiliation_card_number, length: {maximum: 64}
+#  validates :payroll_code, length: {maximum: 64}
+#  validates :keycard_number, length: {maximum: 64}
+#  validates :dob, comparison: { less_than_or_equal_to: (Date.today - 18.years), message: 'must be at least 18 years old' }, unless: Proc.new { |a| a.dob.blank? }
   
   scope :active, -> { where(payroll_active: true) }
   scope :inactive, -> { where(payroll_active: false) }  
