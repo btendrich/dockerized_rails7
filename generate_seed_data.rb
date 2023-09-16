@@ -16,11 +16,45 @@ $logger.info "Connected!"
 lines = []
 
 
+###################### employee classifications ################
+employee_classifications = {
+  'Basic' => 1,
+  'Extra' => 2,
+  'Maintenance' => 3,
+  'Retired' => 4,
+}
+employee_classifications.each do |name, id|
+  lines << <<-EOF
+EmployeeClassification.create(
+  id: #{id},
+  name: "#{name}",
+)
+EOF
+end
+
+
+###################### rate classifications ################
+rate_classifications = {
+  'Basic' => 1,
+  'Extra' => 2,
+  'Other' => 3,
+}
+rate_classifications.each do |name, id|
+  lines << <<-EOF
+RateClassification.create(
+  id: #{id},
+  name: "#{name}",
+)
+EOF
+end
+
+
 #################### employees ##################
 $logger.info "Starting generation of 'employees' seed data..."
 rows=DB[:employees].order(:id)
 $logger.debug "Found #{rows.count} records"
 rows.each do |employee|
+  classification_id = employee_classifications.fetch( employee[:classification], 0)
   lines << <<-EOF
 Employee.create(
   id: #{employee[:id]},
@@ -37,7 +71,7 @@ Employee.create(
   keycard_number: "#{employee[:card_number]}",
   dob: "",
   notes: "#{employee[:notes]}",
-  classification: "#{employee[:classification]}",
+  employee_classification_id: #{classification_id},
   payroll_code: "#{employee[:payroll_file_number]}",
   payroll_active: "#{employee[:active]}"
 )
@@ -59,6 +93,7 @@ TimePeriod.create(
 )
 EOF
 end
+
 
 
 

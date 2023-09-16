@@ -102,7 +102,7 @@
 				<button class="bg-gray-100 text-center w-6 h-8 inline-block text-sm m-0 p-0" title="Copy Employee Name" data-action="click->attempt#copy_employee_down" id="row-<%=row%>">
 					<%= icon( 'fa-solid', 'chevron-down' )%>
 				</button>
-				<%= collection_select( :object, :method, Employee.active.order(:classification).order(:last_name).order(:first_name), :id, :full_name, {prompt: true}, {id: "row-#{row}", class: "bg-gray-100 align-top border-0 h-8 w-48 inline-block text-xs p-0 m-0", data: {attempt_target: "employee"}})%>
+				<%= collection_select( :object, :method, Employee.active.order(:employee_classification_id).order(:last_name).order(:first_name), :id, :full_name, {prompt: true}, {id: "row-#{row}", class: "bg-gray-100 align-top border-0 h-8 w-48 inline-block text-xs p-0 m-0", data: {attempt_target: "employee"}})%>
 
 				<% time = Time.now.midnight %>
 				<% 0.upto(27) do |hour| %>

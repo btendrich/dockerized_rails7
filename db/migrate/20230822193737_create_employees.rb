@@ -3,7 +3,7 @@ class CreateEmployees < ActiveRecord::Migration[7.0]
     create_table :employees do |t|
       t.string :first_name
       t.string :last_name
-      t.string :classification
+      t.integer :employee_classification_id
       t.string :address1
       t.string :address2
       t.string :city

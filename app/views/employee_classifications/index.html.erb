@@ -4,6 +4,7 @@
 	  <thead>
 	    <tr class='bg-teal-100'>
 	      <th class='p-3'><%= sortable_link_for :name, type: :alpha %></th>
+	      <th class='p-3'># Of Employees</th>
 	      <th class='p-3 w-1/5 text-right'><%= link_to 'New Employee Classification', new_employee_classification_path, class: 'bg-teal-600 text-gray-100 p-2 mr-2 text-sm hover:bg-teal-700 rounded-xl'%></th>
 	    </tr>
 	  </thead>
@@ -11,6 +12,7 @@
 			<% @employee_classifications.each do |employee_classification| %>
 	    <tr class='bg-gray-100 hover:bg-gray-200'>
 	      <td class='p-1.5'><%= employee_classification.name %></td>
+	      <td class='p-1.5'><%= employee_classification.employees.count %></td>
 	      <td class='p-1.5 text-right'>
 	      	<%= link_to 'Edit', edit_employee_classification_path(employee_classification), class: 'bg-blue-200 p-1 mr-1 hover:bg-blue-300 rounded-md'%>
 	      	<%= link_to 'Destroy', employee_classification_path(employee_classification), data: { "turbo-method": :delete, turbo_confirm: 'Are you sure?' }, class: 'bg-red-200 p-1 mr-1 hover:bg-red-300 rounded-md'%>

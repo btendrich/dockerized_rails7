@@ -1,3 +1,38 @@
+EmployeeClassification.create(
+  id: 1,
+  name: "Basic",
+)
+
+EmployeeClassification.create(
+  id: 2,
+  name: "Extra",
+)
+
+EmployeeClassification.create(
+  id: 3,
+  name: "Maintenance",
+)
+
+EmployeeClassification.create(
+  id: 4,
+  name: "Retired",
+)
+
+RateClassification.create(
+  id: 1,
+  name: "Basic",
+)
+
+RateClassification.create(
+  id: 2,
+  name: "Extra",
+)
+
+RateClassification.create(
+  id: 3,
+  name: "Other",
+)
+
 Employee.create(
   id: 1,
   last_name: "Ferrante",
@@ -13,7 +48,7 @@ Employee.create(
   keycard_number: "113-11824-8531504",
   dob: "",
   notes: "",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "1242",
   payroll_active: "true"
 )
@@ -33,7 +68,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Retired",
+  employee_classification_id: 4,
   payroll_code: "497",
   payroll_active: "false"
 )
@@ -53,7 +88,7 @@ Employee.create(
   keycard_number: "185-11825-142897",
   dob: "",
   notes: "",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "10793",
   payroll_active: "true"
 )
@@ -73,7 +108,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10809",
   payroll_active: "false"
 )
@@ -93,7 +128,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10862",
   payroll_active: "false"
 )
@@ -113,7 +148,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #1183",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10811",
   payroll_active: "false"
 )
@@ -133,7 +168,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11090",
   payroll_active: "true"
 )
@@ -153,7 +188,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -173,7 +208,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11234",
   payroll_active: "false"
 )
@@ -193,7 +228,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11272",
   payroll_active: "false"
 )
@@ -213,7 +248,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -233,7 +268,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10713",
   payroll_active: "false"
 )
@@ -253,7 +288,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11279",
   payroll_active: "false"
 )
@@ -273,7 +308,7 @@ Employee.create(
   keycard_number: "55-11823-142895",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "7794",
   payroll_active: "true"
 )
@@ -293,7 +328,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11439",
   payroll_active: "false"
 )
@@ -313,7 +348,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2237",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10559",
   payroll_active: "false"
 )
@@ -333,7 +368,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "3253",
   payroll_active: "true"
 )
@@ -353,7 +388,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10315",
   payroll_active: "false"
 )
@@ -373,7 +408,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10787",
   payroll_active: "true"
 )
@@ -393,7 +428,7 @@ Employee.create(
   keycard_number: "61-11822-8531502",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10667",
   payroll_active: "true"
 )
@@ -413,7 +448,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11333",
   payroll_active: "true"
 )
@@ -433,7 +468,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -453,7 +488,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "105563",
   payroll_active: "true"
 )
@@ -473,7 +508,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -493,7 +528,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10833",
   payroll_active: "false"
 )
@@ -513,7 +548,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11417",
   payroll_active: "false"
 )
@@ -533,7 +568,7 @@ Employee.create(
   keycard_number: "255-11822-8531502",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11226",
   payroll_active: "true"
 )
@@ -553,7 +588,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10141",
   payroll_active: "true"
 )
@@ -573,7 +608,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10341",
   payroll_active: "true"
 )
@@ -593,7 +628,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10931",
   payroll_active: "false"
 )
@@ -613,7 +648,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10869",
   payroll_active: "true"
 )
@@ -633,7 +668,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10788",
   payroll_active: "true"
 )
@@ -653,7 +688,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10690",
   payroll_active: "true"
 )
@@ -673,7 +708,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10932",
   payroll_active: "false"
 )
@@ -693,7 +728,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11313",
   payroll_active: "false"
 )
@@ -713,7 +748,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10908",
   payroll_active: "false"
 )
@@ -733,7 +768,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11314",
   payroll_active: "false"
 )
@@ -753,7 +788,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -773,7 +808,7 @@ Employee.create(
   keycard_number: "22-11819-142891",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10663",
   payroll_active: "true"
 )
@@ -793,7 +828,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10881",
   payroll_active: "false"
 )
@@ -813,7 +848,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10878",
   payroll_active: "false"
 )
@@ -833,7 +868,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10784",
   payroll_active: "false"
 )
@@ -853,7 +888,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10812",
   payroll_active: "true"
 )
@@ -873,7 +908,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10702",
   payroll_active: "true"
 )
@@ -893,7 +928,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11334",
   payroll_active: "false"
 )
@@ -913,7 +948,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11235",
   payroll_active: "false"
 )
@@ -933,7 +968,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11415",
   payroll_active: "false"
 )
@@ -953,7 +988,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10095",
   payroll_active: "false"
 )
@@ -973,7 +1008,7 @@ Employee.create(
   keycard_number: "3-11823-8531503",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "6954",
   payroll_active: "true"
 )
@@ -993,7 +1028,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10903",
   payroll_active: "false"
 )
@@ -1013,7 +1048,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #3183",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11315",
   payroll_active: "false"
 )
@@ -1033,7 +1068,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11416",
   payroll_active: "false"
 )
@@ -1053,7 +1088,7 @@ Employee.create(
   keycard_number: "58-11822-8531502",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10714",
   payroll_active: "true"
 )
@@ -1073,7 +1108,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9961",
   payroll_active: "true"
 )
@@ -1093,7 +1128,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10296",
   payroll_active: "true"
 )
@@ -1113,7 +1148,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "1442",
   payroll_active: "true"
 )
@@ -1133,7 +1168,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9627",
   payroll_active: "false"
 )
@@ -1153,7 +1188,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11441",
   payroll_active: "false"
 )
@@ -1173,7 +1208,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10813",
   payroll_active: "false"
 )
@@ -1193,7 +1228,7 @@ Employee.create(
   keycard_number: "208-11822-142894",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "7032",
   payroll_active: "true"
 )
@@ -1213,7 +1248,7 @@ Employee.create(
   keycard_number: "64-11822-142894",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "6405",
   payroll_active: "true"
 )
@@ -1233,7 +1268,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11174",
   payroll_active: "false"
 )
@@ -1253,7 +1288,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11442",
   payroll_active: "true"
 )
@@ -1273,7 +1308,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10814",
   payroll_active: "false"
 )
@@ -1293,7 +1328,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10868",
   payroll_active: "true"
 )
@@ -1313,7 +1348,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11317",
   payroll_active: "false"
 )
@@ -1333,7 +1368,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10910",
   payroll_active: "true"
 )
@@ -1353,7 +1388,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10794",
   payroll_active: "true"
 )
@@ -1373,7 +1408,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10666",
   payroll_active: "true"
 )
@@ -1393,7 +1428,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "4117",
   payroll_active: "true"
 )
@@ -1413,7 +1448,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11444",
   payroll_active: "false"
 )
@@ -1433,7 +1468,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10785",
   payroll_active: "false"
 )
@@ -1453,7 +1488,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -1473,7 +1508,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -1493,7 +1528,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10686",
   payroll_active: "false"
 )
@@ -1513,7 +1548,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11112",
   payroll_active: "true"
 )
@@ -1533,7 +1568,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10849",
   payroll_active: "false"
 )
@@ -1553,7 +1588,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10816",
   payroll_active: "false"
 )
@@ -1573,7 +1608,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11318",
   payroll_active: "false"
 )
@@ -1593,7 +1628,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11237",
   payroll_active: "false"
 )
@@ -1613,7 +1648,7 @@ Employee.create(
   keycard_number: "102-11811-8531491",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10832",
   payroll_active: "false"
 )
@@ -1633,7 +1668,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10711",
   payroll_active: "false"
 )
@@ -1653,7 +1688,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10873",
   payroll_active: "true"
 )
@@ -1673,7 +1708,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -1693,7 +1728,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11280",
   payroll_active: "false"
 )
@@ -1713,7 +1748,7 @@ Employee.create(
   keycard_number: "104-11819-8531499",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10763",
   payroll_active: "true"
 )
@@ -1733,7 +1768,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10709",
   payroll_active: "true"
 )
@@ -1753,7 +1788,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10795",
   payroll_active: "false"
 )
@@ -1773,7 +1808,7 @@ Employee.create(
   keycard_number: "67-11822-8531502",
   dob: "",
   notes: "",
-  classification: "Retired",
+  employee_classification_id: 4,
   payroll_code: "11445",
   payroll_active: "true"
 )
@@ -1793,7 +1828,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10764",
   payroll_active: "true"
 )
@@ -1813,7 +1848,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10703",
   payroll_active: "true"
 )
@@ -1833,7 +1868,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10710",
   payroll_active: "false"
 )
@@ -1853,7 +1888,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11201",
   payroll_active: "false"
 )
@@ -1873,7 +1908,7 @@ Employee.create(
   keycard_number: "72-11819-8531499",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "105564",
   payroll_active: "false"
 )
@@ -1893,7 +1928,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -1913,7 +1948,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10048",
   payroll_active: "true"
 )
@@ -1933,7 +1968,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11282",
   payroll_active: "true"
 )
@@ -1953,7 +1988,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10822",
   payroll_active: "false"
 )
@@ -1973,7 +2008,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -1993,7 +2028,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -2013,7 +2048,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -2033,7 +2068,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -2053,7 +2088,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11467",
   payroll_active: "false"
 )
@@ -2073,7 +2108,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -2093,7 +2128,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10937",
   payroll_active: "false"
 )
@@ -2113,7 +2148,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -2133,7 +2168,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10867",
   payroll_active: "true"
 )
@@ -2153,7 +2188,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -2173,7 +2208,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -2193,7 +2228,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10933",
   payroll_active: "false"
 )
@@ -2213,7 +2248,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -2233,7 +2268,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -2253,7 +2288,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10614",
   payroll_active: "false"
 )
@@ -2273,7 +2308,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10930",
   payroll_active: "false"
 )
@@ -2293,7 +2328,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10616",
   payroll_active: "false"
 )
@@ -2313,7 +2348,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10278",
   payroll_active: "false"
 )
@@ -2333,7 +2368,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "7831",
   payroll_active: "true"
 )
@@ -2353,7 +2388,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11440",
   payroll_active: "false"
 )
@@ -2373,7 +2408,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10773",
   payroll_active: "false"
 )
@@ -2393,7 +2428,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10797",
   payroll_active: "false"
 )
@@ -2413,7 +2448,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10533",
   payroll_active: "false"
 )
@@ -2433,7 +2468,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10692",
   payroll_active: "false"
 )
@@ -2453,7 +2488,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10935",
   payroll_active: "false"
 )
@@ -2473,7 +2508,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9325",
   payroll_active: "true"
 )
@@ -2493,7 +2528,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10939",
   payroll_active: "true"
 )
@@ -2513,7 +2548,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10687",
   payroll_active: "false"
 )
@@ -2533,7 +2568,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10796",
   payroll_active: "false"
 )
@@ -2553,7 +2588,7 @@ Employee.create(
   keycard_number: "185-11822-8531502",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11650",
   payroll_active: "true"
 )
@@ -2573,7 +2608,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11651",
   payroll_active: "false"
 )
@@ -2593,7 +2628,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11652",
   payroll_active: "false"
 )
@@ -2613,7 +2648,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9779",
   payroll_active: "false"
 )
@@ -2633,7 +2668,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11694",
   payroll_active: "false"
 )
@@ -2653,7 +2688,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11712",
   payroll_active: "true"
 )
@@ -2673,7 +2708,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10477",
   payroll_active: "true"
 )
@@ -2693,7 +2728,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11713",
   payroll_active: "true"
 )
@@ -2713,7 +2748,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11711",
   payroll_active: "true"
 )
@@ -2733,7 +2768,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11710",
   payroll_active: "false"
 )
@@ -2753,7 +2788,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "8893",
   payroll_active: "false"
 )
@@ -2773,7 +2808,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "email: rogue61@msn.com",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11942",
   payroll_active: "false"
 )
@@ -2793,7 +2828,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11702",
   payroll_active: "false"
 )
@@ -2813,7 +2848,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10039",
   payroll_active: "false"
 )
@@ -2833,7 +2868,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "105570",
   payroll_active: "false"
 )
@@ -2853,7 +2888,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11777",
   payroll_active: "false"
 )
@@ -2873,7 +2908,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "4993",
   payroll_active: "false"
 )
@@ -2893,7 +2928,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -2913,7 +2948,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -2933,7 +2968,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11530",
   payroll_active: "false"
 )
@@ -2953,7 +2988,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "7323",
   payroll_active: "false"
 )
@@ -2973,7 +3008,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11791",
   payroll_active: "false"
 )
@@ -2993,7 +3028,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11797",
   payroll_active: "false"
 )
@@ -3013,7 +3048,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11016",
   payroll_active: "false"
 )
@@ -3033,7 +3068,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11835",
   payroll_active: "false"
 )
@@ -3053,7 +3088,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10563",
   payroll_active: "false"
 )
@@ -3073,7 +3108,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11841",
   payroll_active: "false"
 )
@@ -3093,7 +3128,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -3113,7 +3148,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11847",
   payroll_active: "false"
 )
@@ -3133,7 +3168,7 @@ Employee.create(
   keycard_number: "183-11822-8531502",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11846",
   payroll_active: "true"
 )
@@ -3153,7 +3188,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11851",
   payroll_active: "true"
 )
@@ -3173,7 +3208,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11848",
   payroll_active: "false"
 )
@@ -3193,7 +3228,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -3213,7 +3248,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11850",
   payroll_active: "false"
 )
@@ -3233,7 +3268,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11866",
   payroll_active: "false"
 )
@@ -3253,7 +3288,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10306",
   payroll_active: "false"
 )
@@ -3273,7 +3308,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10009",
   payroll_active: "true"
 )
@@ -3293,7 +3328,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11875",
   payroll_active: "false"
 )
@@ -3313,7 +3348,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11872",
   payroll_active: "false"
 )
@@ -3333,7 +3368,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11871",
   payroll_active: "false"
 )
@@ -3353,7 +3388,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11873",
   payroll_active: "true"
 )
@@ -3373,7 +3408,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11874",
   payroll_active: "false"
 )
@@ -3393,7 +3428,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11549",
   payroll_active: "false"
 )
@@ -3413,7 +3448,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11890",
   payroll_active: "false"
 )
@@ -3433,7 +3468,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10283",
   payroll_active: "false"
 )
@@ -3453,7 +3488,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11877",
   payroll_active: "false"
 )
@@ -3473,7 +3508,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10289",
   payroll_active: "false"
 )
@@ -3493,7 +3528,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -3513,7 +3548,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11891",
   payroll_active: "false"
 )
@@ -3533,7 +3568,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10292",
   payroll_active: "false"
 )
@@ -3553,7 +3588,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11888",
   payroll_active: "false"
 )
@@ -3573,7 +3608,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11836",
   payroll_active: "false"
 )
@@ -3593,7 +3628,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11886",
   payroll_active: "false"
 )
@@ -3613,7 +3648,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11896",
   payroll_active: "false"
 )
@@ -3633,7 +3668,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11895",
   payroll_active: "false"
 )
@@ -3653,7 +3688,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11893",
   payroll_active: "false"
 )
@@ -3673,7 +3708,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11894",
   payroll_active: "true"
 )
@@ -3693,7 +3728,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11889",
   payroll_active: "false"
 )
@@ -3713,7 +3748,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10500",
   payroll_active: "false"
 )
@@ -3733,7 +3768,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11909",
   payroll_active: "false"
 )
@@ -3753,7 +3788,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11945",
   payroll_active: "false"
 )
@@ -3773,7 +3808,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11944",
   payroll_active: "false"
 )
@@ -3793,7 +3828,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11946",
   payroll_active: "true"
 )
@@ -3813,7 +3848,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #1350",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11943",
   payroll_active: "false"
 )
@@ -3833,7 +3868,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11949",
   payroll_active: "false"
 )
@@ -3853,7 +3888,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11947",
   payroll_active: "true"
 )
@@ -3873,7 +3908,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10392",
   payroll_active: "false"
 )
@@ -3893,7 +3928,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11954",
   payroll_active: "false"
 )
@@ -3913,7 +3948,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11463",
   payroll_active: "false"
 )
@@ -3933,7 +3968,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11989",
   payroll_active: "false"
 )
@@ -3953,7 +3988,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11039",
   payroll_active: "false"
 )
@@ -3973,7 +4008,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11987",
   payroll_active: "false"
 )
@@ -3993,7 +4028,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10987",
   payroll_active: "false"
 )
@@ -4013,7 +4048,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11991",
   payroll_active: "false"
 )
@@ -4033,7 +4068,7 @@ Employee.create(
   keycard_number: "161-11819-8531499",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11988",
   payroll_active: "false"
 )
@@ -4053,7 +4088,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10538",
   payroll_active: "false"
 )
@@ -4073,7 +4108,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11783",
   payroll_active: "false"
 )
@@ -4093,7 +4128,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11406",
   payroll_active: "true"
 )
@@ -4113,7 +4148,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10269",
   payroll_active: "false"
 )
@@ -4133,7 +4168,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11992",
   payroll_active: "false"
 )
@@ -4153,7 +4188,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11418",
   payroll_active: "false"
 )
@@ -4173,7 +4208,7 @@ Employee.create(
   keycard_number: "115-11341-142413",
   dob: "",
   notes: "",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "11586",
   payroll_active: "true"
 )
@@ -4193,7 +4228,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11997",
   payroll_active: "false"
 )
@@ -4213,7 +4248,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -4233,7 +4268,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11998",
   payroll_active: "true"
 )
@@ -4253,7 +4288,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -4273,7 +4308,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10532",
   payroll_active: "false"
 )
@@ -4293,7 +4328,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10032",
   payroll_active: "false"
 )
@@ -4313,7 +4348,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9422",
   payroll_active: "false"
 )
@@ -4333,7 +4368,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11008",
   payroll_active: "false"
 )
@@ -4353,7 +4388,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10312",
   payroll_active: "false"
 )
@@ -4373,7 +4408,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12370",
   payroll_active: "false"
 )
@@ -4393,7 +4428,7 @@ Employee.create(
   keycard_number: "17-11819-142891",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12373",
   payroll_active: "true"
 )
@@ -4413,7 +4448,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -4433,7 +4468,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -4453,7 +4488,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12424",
   payroll_active: "false"
 )
@@ -4473,7 +4508,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12425",
   payroll_active: "false"
 )
@@ -4493,7 +4528,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12428",
   payroll_active: "true"
 )
@@ -4513,7 +4548,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10229",
   payroll_active: "false"
 )
@@ -4533,7 +4568,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10277",
   payroll_active: "false"
 )
@@ -4553,7 +4588,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12438",
   payroll_active: "false"
 )
@@ -4573,7 +4608,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12473",
   payroll_active: "false"
 )
@@ -4593,7 +4628,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10537",
   payroll_active: "false"
 )
@@ -4613,7 +4648,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "4841",
   payroll_active: "false"
 )
@@ -4633,7 +4668,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12500",
   payroll_active: "false"
 )
@@ -4653,7 +4688,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2018",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12483",
   payroll_active: "false"
 )
@@ -4673,7 +4708,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12484",
   payroll_active: "false"
 )
@@ -4693,7 +4728,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #0479",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11487",
   payroll_active: "false"
 )
@@ -4713,7 +4748,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2298",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12499",
   payroll_active: "false"
 )
@@ -4733,7 +4768,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #0093",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -4753,7 +4788,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12481",
   payroll_active: "false"
 )
@@ -4773,7 +4808,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12482",
   payroll_active: "false"
 )
@@ -4793,7 +4828,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2713",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -4813,7 +4848,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2381",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12485",
   payroll_active: "false"
 )
@@ -4833,7 +4868,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #0020",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12497",
   payroll_active: "false"
 )
@@ -4853,7 +4888,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2394",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "8956",
   payroll_active: "false"
 )
@@ -4873,7 +4908,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2687",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12498",
   payroll_active: "true"
 )
@@ -4893,7 +4928,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10083",
   payroll_active: "false"
 )
@@ -4913,7 +4948,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2309",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12495",
   payroll_active: "true"
 )
@@ -4933,7 +4968,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2327",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12045",
   payroll_active: "true"
 )
@@ -4953,7 +4988,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2790",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12491",
   payroll_active: "true"
 )
@@ -4973,7 +5008,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12490",
   payroll_active: "false"
 )
@@ -4993,7 +5028,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10097",
   payroll_active: "false"
 )
@@ -5013,7 +5048,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #0363",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12496",
   payroll_active: "true"
 )
@@ -5033,7 +5068,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12177",
   payroll_active: "false"
 )
@@ -5053,7 +5088,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10214",
   payroll_active: "false"
 )
@@ -5073,7 +5108,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12316",
   payroll_active: "true"
 )
@@ -5093,7 +5128,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10076",
   payroll_active: "false"
 )
@@ -5113,7 +5148,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10096",
   payroll_active: "false"
 )
@@ -5133,7 +5168,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11241",
   payroll_active: "false"
 )
@@ -5153,7 +5188,7 @@ Employee.create(
   keycard_number: "180-11822-142894",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11643",
   payroll_active: "true"
 )
@@ -5173,7 +5208,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12513",
   payroll_active: "false"
 )
@@ -5193,7 +5228,7 @@ Employee.create(
   keycard_number: "69-11824-8531504",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12512",
   payroll_active: "true"
 )
@@ -5213,7 +5248,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #828",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12697",
   payroll_active: "true"
 )
@@ -5233,7 +5268,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12712",
   payroll_active: "false"
 )
@@ -5253,7 +5288,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #1919",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12711",
   payroll_active: "false"
 )
@@ -5273,7 +5308,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2903",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10031",
   payroll_active: "false"
 )
@@ -5293,7 +5328,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12738",
   payroll_active: "false"
 )
@@ -5313,7 +5348,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2084",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5333,7 +5368,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #0275",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5353,7 +5388,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5373,7 +5408,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12755",
   payroll_active: "false"
 )
@@ -5393,7 +5428,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10038",
   payroll_active: "false"
 )
@@ -5413,7 +5448,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11986",
   payroll_active: "true"
 )
@@ -5433,7 +5468,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2549",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12795",
   payroll_active: "true"
 )
@@ -5453,7 +5488,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #0569",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12858",
   payroll_active: "true"
 )
@@ -5473,7 +5508,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #3007",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10531",
   payroll_active: "false"
 )
@@ -5493,7 +5528,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12920",
   payroll_active: "false"
 )
@@ -5513,7 +5548,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12885",
   payroll_active: "false"
 )
@@ -5533,7 +5568,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "8793",
   payroll_active: "false"
 )
@@ -5553,7 +5588,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5573,7 +5608,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12941",
   payroll_active: "true"
 )
@@ -5593,7 +5628,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5613,7 +5648,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #0064",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5633,7 +5668,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #02779 (Local 322)",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5653,7 +5688,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5673,7 +5708,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11646",
   payroll_active: "false"
 )
@@ -5693,7 +5728,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5713,7 +5748,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5733,7 +5768,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2319",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5753,7 +5788,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #3186",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12957",
   payroll_active: "true"
 )
@@ -5773,7 +5808,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12975",
   payroll_active: "false"
 )
@@ -5793,7 +5828,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12977",
   payroll_active: "false"
 )
@@ -5813,7 +5848,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #0695",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12028",
   payroll_active: "true"
 )
@@ -5833,7 +5868,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #3095",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13170",
   payroll_active: "false"
 )
@@ -5853,7 +5888,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12517",
   payroll_active: "false"
 )
@@ -5873,7 +5908,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12790",
   payroll_active: "false"
 )
@@ -5893,7 +5928,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9735",
   payroll_active: "false"
 )
@@ -5913,7 +5948,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #1352",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5933,7 +5968,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5953,7 +5988,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #1359",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13414",
   payroll_active: "false"
 )
@@ -5973,7 +6008,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #1979",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -5993,7 +6028,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2362",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13444",
   payroll_active: "false"
 )
@@ -6013,7 +6048,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #2044",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -6033,7 +6068,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13470",
   payroll_active: "false"
 )
@@ -6053,7 +6088,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #1314",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13469",
   payroll_active: "false"
 )
@@ -6073,7 +6108,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13471",
   payroll_active: "false"
 )
@@ -6093,7 +6128,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #0080",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12382",
   payroll_active: "false"
 )
@@ -6113,7 +6148,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13600",
   payroll_active: "true"
 )
@@ -6133,7 +6168,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -6153,7 +6188,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -6173,7 +6208,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10589",
   payroll_active: "false"
 )
@@ -6193,7 +6228,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12867",
   payroll_active: "false"
 )
@@ -6213,7 +6248,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13598",
   payroll_active: "false"
 )
@@ -6233,7 +6268,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13597",
   payroll_active: "false"
 )
@@ -6253,7 +6288,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -6273,7 +6308,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10980",
   payroll_active: "false"
 )
@@ -6293,7 +6328,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12726",
   payroll_active: "false"
 )
@@ -6313,7 +6348,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -6333,7 +6368,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13596",
   payroll_active: "false"
 )
@@ -6353,7 +6388,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10284",
   payroll_active: "false"
 )
@@ -6373,7 +6408,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13595",
   payroll_active: "false"
 )
@@ -6393,7 +6428,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13516",
   payroll_active: "false"
 )
@@ -6413,7 +6448,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11745",
   payroll_active: "false"
 )
@@ -6433,7 +6468,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13515",
   payroll_active: "false"
 )
@@ -6454,7 +6489,7 @@ Employee.create(
   dob: "",
   notes: "
 ",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13982",
   payroll_active: "false"
 )
@@ -6474,7 +6509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13546",
   payroll_active: "false"
 )
@@ -6494,7 +6529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10243",
   payroll_active: "false"
 )
@@ -6514,7 +6549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10955",
   payroll_active: "false"
 )
@@ -6534,7 +6569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13420",
   payroll_active: "false"
 )
@@ -6554,7 +6589,7 @@ Employee.create(
   keycard_number: "70-11819-8531499",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14178",
   payroll_active: "true"
 )
@@ -6574,7 +6609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14180",
   payroll_active: "false"
 )
@@ -6594,7 +6629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150421",
   payroll_active: "true"
 )
@@ -6614,7 +6649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14214",
   payroll_active: "false"
 )
@@ -6634,7 +6669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14176",
   payroll_active: "true"
 )
@@ -6654,7 +6689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14400",
   payroll_active: "false"
 )
@@ -6674,7 +6709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14435",
   payroll_active: "false"
 )
@@ -6694,7 +6729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14433",
   payroll_active: "false"
 )
@@ -6714,7 +6749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14429",
   payroll_active: "true"
 )
@@ -6734,7 +6769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14434",
   payroll_active: "false"
 )
@@ -6754,7 +6789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14431",
   payroll_active: "false"
 )
@@ -6774,7 +6809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Card #1115",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13205",
   payroll_active: "true"
 )
@@ -6794,7 +6829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12073",
   payroll_active: "false"
 )
@@ -6814,7 +6849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10534",
   payroll_active: "false"
 )
@@ -6834,7 +6869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12072",
   payroll_active: "false"
 )
@@ -6854,7 +6889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14505",
   payroll_active: "true"
 )
@@ -6874,7 +6909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14517",
   payroll_active: "false"
 )
@@ -6894,7 +6929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12946",
   payroll_active: "false"
 )
@@ -6914,7 +6949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14518",
   payroll_active: "false"
 )
@@ -6934,7 +6969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14521",
   payroll_active: "false"
 )
@@ -6954,7 +6989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12076",
   payroll_active: "false"
 )
@@ -6974,7 +7009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -6994,7 +7029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11582",
   payroll_active: "false"
 )
@@ -7014,7 +7049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13939",
   payroll_active: "false"
 )
@@ -7034,7 +7069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11198",
   payroll_active: "true"
 )
@@ -7054,7 +7089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14793",
   payroll_active: "false"
 )
@@ -7074,7 +7109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14950",
   payroll_active: "false"
 )
@@ -7094,7 +7129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14949",
   payroll_active: "false"
 )
@@ -7114,7 +7149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14794",
   payroll_active: "false"
 )
@@ -7134,7 +7169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14948",
   payroll_active: "false"
 )
@@ -7154,7 +7189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10344",
   payroll_active: "false"
 )
@@ -7174,7 +7209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14795",
   payroll_active: "false"
 )
@@ -7194,7 +7229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10375",
   payroll_active: "true"
 )
@@ -7214,7 +7249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14976",
   payroll_active: "false"
 )
@@ -7234,7 +7269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14977",
   payroll_active: "false"
 )
@@ -7254,7 +7289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12982",
   payroll_active: "false"
 )
@@ -7274,7 +7309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15059",
   payroll_active: "true"
 )
@@ -7294,7 +7329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12830",
   payroll_active: "true"
 )
@@ -7314,7 +7349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13075",
   payroll_active: "false"
 )
@@ -7334,7 +7369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12168",
   payroll_active: "false"
 )
@@ -7354,7 +7389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14721",
   payroll_active: "false"
 )
@@ -7374,7 +7409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13940",
   payroll_active: "false"
 )
@@ -7394,7 +7429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14696",
   payroll_active: "false"
 )
@@ -7414,7 +7449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "3517",
   payroll_active: "true"
 )
@@ -7434,7 +7469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Retired",
+  employee_classification_id: 4,
   payroll_code: "1518",
   payroll_active: "false"
 )
@@ -7454,7 +7489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10964",
   payroll_active: "false"
 )
@@ -7474,7 +7509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11614",
   payroll_active: "false"
 )
@@ -7494,7 +7529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14720",
   payroll_active: "false"
 )
@@ -7514,7 +7549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14516",
   payroll_active: "false"
 )
@@ -7534,7 +7569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10929",
   payroll_active: "false"
 )
@@ -7554,7 +7589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14697",
   payroll_active: "false"
 )
@@ -7574,7 +7609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14246",
   payroll_active: "false"
 )
@@ -7594,7 +7629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14702",
   payroll_active: "false"
 )
@@ -7614,7 +7649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12198",
   payroll_active: "false"
 )
@@ -7634,7 +7669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12414",
   payroll_active: "false"
 )
@@ -7654,7 +7689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13886",
   payroll_active: "false"
 )
@@ -7674,7 +7709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14691",
   payroll_active: "false"
 )
@@ -7694,7 +7729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14164",
   payroll_active: "false"
 )
@@ -7714,7 +7749,7 @@ Employee.create(
   keycard_number: "167-11384-8531064",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "8761",
   payroll_active: "true"
 )
@@ -7734,7 +7769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13475",
   payroll_active: "false"
 )
@@ -7754,7 +7789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12551",
   payroll_active: "false"
 )
@@ -7774,7 +7809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14432",
   payroll_active: "false"
 )
@@ -7794,7 +7829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12968",
   payroll_active: "false"
 )
@@ -7814,7 +7849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13519",
   payroll_active: "false"
 )
@@ -7834,7 +7869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11448",
   payroll_active: "true"
 )
@@ -7854,7 +7889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14773",
   payroll_active: "false"
 )
@@ -7874,7 +7909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13513",
   payroll_active: "false"
 )
@@ -7894,7 +7929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12307",
   payroll_active: "false"
 )
@@ -7914,7 +7949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14806",
   payroll_active: "false"
 )
@@ -7934,7 +7969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14674",
   payroll_active: "false"
 )
@@ -7954,7 +7989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13514",
   payroll_active: "false"
 )
@@ -7974,7 +8009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14737",
   payroll_active: "false"
 )
@@ -7994,7 +8029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13908",
   payroll_active: "false"
 )
@@ -8014,7 +8049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12321",
   payroll_active: "false"
 )
@@ -8034,7 +8069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12121",
   payroll_active: "false"
 )
@@ -8054,7 +8089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10553",
   payroll_active: "false"
 )
@@ -8074,7 +8109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10617",
   payroll_active: "false"
 )
@@ -8094,7 +8129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10525",
   payroll_active: "false"
 )
@@ -8114,7 +8149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14166",
   payroll_active: "false"
 )
@@ -8134,7 +8169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14452",
   payroll_active: "false"
 )
@@ -8154,7 +8189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14751",
   payroll_active: "false"
 )
@@ -8174,7 +8209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12280",
   payroll_active: "false"
 )
@@ -8194,7 +8229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14699",
   payroll_active: "false"
 )
@@ -8214,7 +8249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10361",
   payroll_active: "false"
 )
@@ -8234,7 +8269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11667",
   payroll_active: "false"
 )
@@ -8254,7 +8289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11550",
   payroll_active: "false"
 )
@@ -8274,7 +8309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10526",
   payroll_active: "false"
 )
@@ -8294,7 +8329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13926",
   payroll_active: "false"
 )
@@ -8314,7 +8349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13907",
   payroll_active: "false"
 )
@@ -8334,7 +8369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14944",
   payroll_active: "false"
 )
@@ -8354,7 +8389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14719",
   payroll_active: "false"
 )
@@ -8374,7 +8409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14686",
   payroll_active: "false"
 )
@@ -8394,7 +8429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12313",
   payroll_active: "false"
 )
@@ -8414,7 +8449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14698",
   payroll_active: "false"
 )
@@ -8434,7 +8469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13207",
   payroll_active: "false"
 )
@@ -8454,7 +8489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12955",
   payroll_active: "false"
 )
@@ -8474,7 +8509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13038",
   payroll_active: "false"
 )
@@ -8494,7 +8529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13204",
   payroll_active: "false"
 )
@@ -8514,7 +8549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13419",
   payroll_active: "false"
 )
@@ -8534,7 +8569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10314",
   payroll_active: "false"
 )
@@ -8554,7 +8589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14803",
   payroll_active: "false"
 )
@@ -8574,7 +8609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13417",
   payroll_active: "false"
 )
@@ -8594,7 +8629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10364",
   payroll_active: "false"
 )
@@ -8614,7 +8649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12695",
   payroll_active: "false"
 )
@@ -8634,7 +8669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13476",
   payroll_active: "false"
 )
@@ -8654,7 +8689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13061",
   payroll_active: "false"
 )
@@ -8674,7 +8709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13911",
   payroll_active: "false"
 )
@@ -8694,7 +8729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10192",
   payroll_active: "false"
 )
@@ -8714,7 +8749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14692",
   payroll_active: "false"
 )
@@ -8734,7 +8769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10698",
   payroll_active: "false"
 )
@@ -8754,7 +8789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12785",
   payroll_active: "false"
 )
@@ -8774,7 +8809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12174",
   payroll_active: "false"
 )
@@ -8794,7 +8829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14250",
   payroll_active: "false"
 )
@@ -8814,7 +8849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10528",
   payroll_active: "false"
 )
@@ -8834,7 +8869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14774",
   payroll_active: "false"
 )
@@ -8854,7 +8889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13121",
   payroll_active: "false"
 )
@@ -8874,7 +8909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13923",
   payroll_active: "false"
 )
@@ -8894,7 +8929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12273",
   payroll_active: "false"
 )
@@ -8914,7 +8949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10984",
   payroll_active: "false"
 )
@@ -8934,7 +8969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14234",
   payroll_active: "false"
 )
@@ -8954,7 +8989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "4129",
   payroll_active: "false"
 )
@@ -8974,7 +9009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13057",
   payroll_active: "false"
 )
@@ -8994,7 +9029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10965",
   payroll_active: "false"
 )
@@ -9014,7 +9049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13045",
   payroll_active: "false"
 )
@@ -9034,7 +9069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13871",
   payroll_active: "false"
 )
@@ -9054,7 +9089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14956",
   payroll_active: "false"
 )
@@ -9074,7 +9109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14153",
   payroll_active: "false"
 )
@@ -9094,7 +9129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14738",
   payroll_active: "false"
 )
@@ -9114,7 +9149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13693",
   payroll_active: "true"
 )
@@ -9134,7 +9169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14179",
   payroll_active: "false"
 )
@@ -9154,7 +9189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11900",
   payroll_active: "false"
 )
@@ -9174,7 +9209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11239",
   payroll_active: "false"
 )
@@ -9194,7 +9229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10235",
   payroll_active: "false"
 )
@@ -9214,7 +9249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9792",
   payroll_active: "false"
 )
@@ -9234,7 +9269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "105560",
   payroll_active: "false"
 )
@@ -9254,7 +9289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14805",
   payroll_active: "false"
 )
@@ -9274,7 +9309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13913",
   payroll_active: "false"
 )
@@ -9294,7 +9329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14723",
   payroll_active: "false"
 )
@@ -9314,7 +9349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13949",
   payroll_active: "false"
 )
@@ -9334,7 +9369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10950",
   payroll_active: "false"
 )
@@ -9354,7 +9389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14957",
   payroll_active: "false"
 )
@@ -9374,7 +9409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13418",
   payroll_active: "false"
 )
@@ -9394,7 +9429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13169",
   payroll_active: "false"
 )
@@ -9414,7 +9449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12267",
   payroll_active: "false"
 )
@@ -9434,7 +9469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14175",
   payroll_active: "false"
 )
@@ -9454,7 +9489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10285",
   payroll_active: "false"
 )
@@ -9474,7 +9509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11007",
   payroll_active: "false"
 )
@@ -9494,7 +9529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14770",
   payroll_active: "true"
 )
@@ -9514,7 +9549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14695",
   payroll_active: "false"
 )
@@ -9534,7 +9569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14670",
   payroll_active: "false"
 )
@@ -9554,7 +9589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11450",
   payroll_active: "false"
 )
@@ -9574,7 +9609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11451",
   payroll_active: "false"
 )
@@ -9594,7 +9629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13723",
   payroll_active: "false"
 )
@@ -9614,7 +9649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9541",
   payroll_active: "true"
 )
@@ -9634,7 +9669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13891",
   payroll_active: "false"
 )
@@ -9654,7 +9689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10985",
   payroll_active: "false"
 )
@@ -9674,7 +9709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11148",
   payroll_active: "false"
 )
@@ -9694,7 +9729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11050",
   payroll_active: "false"
 )
@@ -9714,7 +9749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14506",
   payroll_active: "false"
 )
@@ -9734,7 +9769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14182",
   payroll_active: "false"
 )
@@ -9754,7 +9789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14800",
   payroll_active: "false"
 )
@@ -9774,7 +9809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11532",
   payroll_active: "false"
 )
@@ -9794,7 +9829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10010",
   payroll_active: "false"
 )
@@ -9814,7 +9849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13119",
   payroll_active: "false"
 )
@@ -9834,7 +9869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11936",
   payroll_active: "false"
 )
@@ -9854,7 +9889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13705",
   payroll_active: "false"
 )
@@ -9874,7 +9909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14224",
   payroll_active: "false"
 )
@@ -9894,7 +9929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14688",
   payroll_active: "false"
 )
@@ -9914,7 +9949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10986",
   payroll_active: "false"
 )
@@ -9934,7 +9969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11864",
   payroll_active: "false"
 )
@@ -9954,7 +9989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12403",
   payroll_active: "false"
 )
@@ -9974,7 +10009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10286",
   payroll_active: "false"
 )
@@ -9994,7 +10029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13935",
   payroll_active: "false"
 )
@@ -10014,7 +10049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14694",
   payroll_active: "false"
 )
@@ -10034,7 +10069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14685",
   payroll_active: "false"
 )
@@ -10054,7 +10089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13214",
   payroll_active: "true"
 )
@@ -10074,7 +10109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12504",
   payroll_active: "false"
 )
@@ -10094,7 +10129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13635",
   payroll_active: "false"
 )
@@ -10114,7 +10149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12311",
   payroll_active: "false"
 )
@@ -10134,7 +10169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13890",
   payroll_active: "true"
 )
@@ -10154,7 +10189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14150",
   payroll_active: "false"
 )
@@ -10174,7 +10209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14138",
   payroll_active: "false"
 )
@@ -10194,7 +10229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10952",
   payroll_active: "false"
 )
@@ -10214,7 +10249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12476",
   payroll_active: "false"
 )
@@ -10234,7 +10269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Retired",
+  employee_classification_id: 4,
   payroll_code: "425",
   payroll_active: "false"
 )
@@ -10254,7 +10289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9986",
   payroll_active: "true"
 )
@@ -10274,7 +10309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14513",
   payroll_active: "false"
 )
@@ -10294,7 +10329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11179",
   payroll_active: "false"
 )
@@ -10314,7 +10349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13917",
   payroll_active: "false"
 )
@@ -10334,7 +10369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14718",
   payroll_active: "false"
 )
@@ -10354,7 +10389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10953",
   payroll_active: "false"
 )
@@ -10374,7 +10409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13426",
   payroll_active: "false"
 )
@@ -10394,7 +10429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14802",
   payroll_active: "false"
 )
@@ -10414,7 +10449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14249",
   payroll_active: "false"
 )
@@ -10434,7 +10469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13049",
   payroll_active: "false"
 )
@@ -10454,7 +10489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14181",
   payroll_active: "false"
 )
@@ -10474,7 +10509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "6398",
   payroll_active: "false"
 )
@@ -10494,7 +10529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10372",
   payroll_active: "false"
 )
@@ -10514,7 +10549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11546",
   payroll_active: "false"
 )
@@ -10534,7 +10569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14139",
   payroll_active: "false"
 )
@@ -10554,7 +10589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10239",
   payroll_active: "false"
 )
@@ -10574,7 +10609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14680",
   payroll_active: "false"
 )
@@ -10594,7 +10629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14186",
   payroll_active: "false"
 )
@@ -10614,7 +10649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13056",
   payroll_active: "false"
 )
@@ -10634,7 +10669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13694",
   payroll_active: "false"
 )
@@ -10654,7 +10689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13120",
   payroll_active: "false"
 )
@@ -10674,7 +10709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12848",
   payroll_active: "false"
 )
@@ -10694,7 +10729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12532",
   payroll_active: "false"
 )
@@ -10714,7 +10749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12935",
   payroll_active: "false"
 )
@@ -10734,7 +10769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14682",
   payroll_active: "false"
 )
@@ -10754,7 +10789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14476",
   payroll_active: "false"
 )
@@ -10774,7 +10809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12966",
   payroll_active: "false"
 )
@@ -10794,7 +10829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13146",
   payroll_active: "false"
 )
@@ -10814,7 +10849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13882",
   payroll_active: "false"
 )
@@ -10834,7 +10869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9620",
   payroll_active: "false"
 )
@@ -10854,7 +10889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14667",
   payroll_active: "false"
 )
@@ -10874,7 +10909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12147",
   payroll_active: "true"
 )
@@ -10894,7 +10929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13707",
   payroll_active: "false"
 )
@@ -10914,7 +10949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "7818",
   payroll_active: "false"
 )
@@ -10934,7 +10969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13867",
   payroll_active: "false"
 )
@@ -10954,7 +10989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11781",
   payroll_active: "false"
 )
@@ -10974,7 +11009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12542",
   payroll_active: "false"
 )
@@ -10994,7 +11029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13401",
   payroll_active: "false"
 )
@@ -11014,7 +11049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12190",
   payroll_active: "false"
 )
@@ -11034,7 +11069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13047",
   payroll_active: "false"
 )
@@ -11054,7 +11089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13906",
   payroll_active: "false"
 )
@@ -11074,7 +11109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14525",
   payroll_active: "false"
 )
@@ -11094,7 +11129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12276",
   payroll_active: "false"
 )
@@ -11114,7 +11149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9958",
   payroll_active: "false"
 )
@@ -11134,7 +11169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12911",
   payroll_active: "false"
 )
@@ -11154,7 +11189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11466",
   payroll_active: "false"
 )
@@ -11174,7 +11209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12055",
   payroll_active: "false"
 )
@@ -11194,7 +11229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10241",
   payroll_active: "false"
 )
@@ -11214,7 +11249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10624",
   payroll_active: "false"
 )
@@ -11234,7 +11269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14141",
   payroll_active: "false"
 )
@@ -11254,7 +11289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14395",
   payroll_active: "false"
 )
@@ -11274,7 +11309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13685",
   payroll_active: "false"
 )
@@ -11294,7 +11329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11019",
   payroll_active: "false"
 )
@@ -11314,7 +11349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13888",
   payroll_active: "false"
 )
@@ -11334,7 +11369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14693",
   payroll_active: "false"
 )
@@ -11354,7 +11389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14675",
   payroll_active: "false"
 )
@@ -11374,7 +11409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12173",
   payroll_active: "false"
 )
@@ -11394,7 +11429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12531",
   payroll_active: "false"
 )
@@ -11414,7 +11449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13592",
   payroll_active: "false"
 )
@@ -11434,7 +11469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13200",
   payroll_active: "false"
 )
@@ -11454,7 +11489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10291",
   payroll_active: "false"
 )
@@ -11474,7 +11509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13284",
   payroll_active: "false"
 )
@@ -11494,7 +11529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12363",
   payroll_active: "false"
 )
@@ -11514,7 +11549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12339",
   payroll_active: "true"
 )
@@ -11534,7 +11569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14430",
   payroll_active: "true"
 )
@@ -11554,7 +11589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13474",
   payroll_active: "false"
 )
@@ -11574,7 +11609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11843",
   payroll_active: "false"
 )
@@ -11594,7 +11629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13468",
   payroll_active: "false"
 )
@@ -11614,7 +11649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14174",
   payroll_active: "false"
 )
@@ -11634,7 +11669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14798",
   payroll_active: "false"
 )
@@ -11654,7 +11689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10571",
   payroll_active: "true"
 )
@@ -11674,7 +11709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14223",
   payroll_active: "false"
 )
@@ -11694,7 +11729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13424",
   payroll_active: "false"
 )
@@ -11714,7 +11749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12445",
   payroll_active: "false"
 )
@@ -11734,7 +11769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12082",
   payroll_active: "false"
 )
@@ -11754,7 +11789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11022",
   payroll_active: "false"
 )
@@ -11774,7 +11809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13463",
   payroll_active: "false"
 )
@@ -11794,7 +11829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14707",
   payroll_active: "false"
 )
@@ -11814,7 +11849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12405",
   payroll_active: "false"
 )
@@ -11834,7 +11869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12439",
   payroll_active: "false"
 )
@@ -11854,7 +11889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12180",
   payroll_active: "false"
 )
@@ -11874,7 +11909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14671",
   payroll_active: "false"
 )
@@ -11894,7 +11929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14807",
   payroll_active: "true"
 )
@@ -11914,7 +11949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10377",
   payroll_active: "false"
 )
@@ -11934,7 +11969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12413",
   payroll_active: "false"
 )
@@ -11954,7 +11989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12737",
   payroll_active: "true"
 )
@@ -11974,7 +12009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14763",
   payroll_active: "false"
 )
@@ -11994,7 +12029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14396",
   payroll_active: "false"
 )
@@ -12014,7 +12049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13902",
   payroll_active: "false"
 )
@@ -12034,7 +12069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14954",
   payroll_active: "false"
 )
@@ -12054,7 +12089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "645",
   payroll_active: "false"
 )
@@ -12074,7 +12109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14708",
   payroll_active: "false"
 )
@@ -12094,7 +12129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11095",
   payroll_active: "false"
 )
@@ -12114,7 +12149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14245",
   payroll_active: "false"
 )
@@ -12134,7 +12169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12184",
   payroll_active: "false"
 )
@@ -12154,7 +12189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13034",
   payroll_active: "false"
 )
@@ -12174,7 +12209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14958",
   payroll_active: "false"
 )
@@ -12194,7 +12229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14177",
   payroll_active: "false"
 )
@@ -12214,7 +12249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11167",
   payroll_active: "false"
 )
@@ -12234,7 +12269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14666",
   payroll_active: "false"
 )
@@ -12254,7 +12289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13499",
   payroll_active: "false"
 )
@@ -12274,7 +12309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11157",
   payroll_active: "false"
 )
@@ -12294,7 +12329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10262",
   payroll_active: "false"
 )
@@ -12314,7 +12349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10660",
   payroll_active: "false"
 )
@@ -12334,7 +12369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13477",
   payroll_active: "false"
 )
@@ -12354,7 +12389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13677",
   payroll_active: "false"
 )
@@ -12374,7 +12409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10320",
   payroll_active: "false"
 )
@@ -12394,7 +12429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11158",
   payroll_active: "false"
 )
@@ -12414,7 +12449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11025",
   payroll_active: "false"
 )
@@ -12434,7 +12469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13942",
   payroll_active: "false"
 )
@@ -12454,7 +12489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12404",
   payroll_active: "false"
 )
@@ -12474,7 +12509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12178",
   payroll_active: "false"
 )
@@ -12494,7 +12529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10959",
   payroll_active: "false"
 )
@@ -12514,7 +12549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "8385",
   payroll_active: "false"
 )
@@ -12534,7 +12569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "8352",
   payroll_active: "false"
 )
@@ -12554,7 +12589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10294",
   payroll_active: "true"
 )
@@ -12574,7 +12609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12415",
   payroll_active: "false"
 )
@@ -12594,7 +12629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11484",
   payroll_active: "true"
 )
@@ -12614,7 +12649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Retired",
+  employee_classification_id: 4,
   payroll_code: "714",
   payroll_active: "false"
 )
@@ -12634,7 +12669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14520",
   payroll_active: "false"
 )
@@ -12654,7 +12689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13547",
   payroll_active: "false"
 )
@@ -12674,7 +12709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13122",
   payroll_active: "false"
 )
@@ -12694,7 +12729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13465",
   payroll_active: "false"
 )
@@ -12714,7 +12749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14669",
   payroll_active: "false"
 )
@@ -12734,7 +12769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11027",
   payroll_active: "false"
 )
@@ -12754,7 +12789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12278",
   payroll_active: "false"
 )
@@ -12774,7 +12809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14668",
   payroll_active: "false"
 )
@@ -12794,7 +12829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11105",
   payroll_active: "false"
 )
@@ -12814,7 +12849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Retired",
+  employee_classification_id: 4,
   payroll_code: "737",
   payroll_active: "false"
 )
@@ -12834,7 +12869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12775",
   payroll_active: "false"
 )
@@ -12854,7 +12889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11938",
   payroll_active: "true"
 )
@@ -12874,7 +12909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12277",
   payroll_active: "false"
 )
@@ -12894,7 +12929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14215",
   payroll_active: "false"
 )
@@ -12914,7 +12949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10661",
   payroll_active: "false"
 )
@@ -12934,7 +12969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11937",
   payroll_active: "false"
 )
@@ -12954,7 +12989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13472",
   payroll_active: "false"
 )
@@ -12974,7 +13009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14542",
   payroll_active: "false"
 )
@@ -12994,7 +13029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14216",
   payroll_active: "false"
 )
@@ -13014,7 +13049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14701",
   payroll_active: "false"
 )
@@ -13034,7 +13069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "7311",
   payroll_active: "false"
 )
@@ -13054,7 +13089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11028",
   payroll_active: "false"
 )
@@ -13074,7 +13109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12523",
   payroll_active: "false"
 )
@@ -13094,7 +13129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13480",
   payroll_active: "false"
 )
@@ -13114,7 +13149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11666",
   payroll_active: "false"
 )
@@ -13134,7 +13169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11127",
   payroll_active: "false"
 )
@@ -13154,7 +13189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12176",
   payroll_active: "false"
 )
@@ -13174,7 +13209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11207",
   payroll_active: "false"
 )
@@ -13194,7 +13229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13428",
   payroll_active: "false"
 )
@@ -13214,7 +13249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13443",
   payroll_active: "false"
 )
@@ -13234,7 +13269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12839",
   payroll_active: "false"
 )
@@ -13254,7 +13289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10451",
   payroll_active: "false"
 )
@@ -13274,7 +13309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11619",
   payroll_active: "false"
 )
@@ -13294,7 +13329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "11662",
   payroll_active: "false"
 )
@@ -13314,7 +13349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12643",
   payroll_active: "false"
 )
@@ -13334,7 +13369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11278",
   payroll_active: "false"
 )
@@ -13354,7 +13389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12036",
   payroll_active: "false"
 )
@@ -13374,7 +13409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13885",
   payroll_active: "false"
 )
@@ -13394,7 +13429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "838",
   payroll_active: "false"
 )
@@ -13414,7 +13449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11462",
   payroll_active: "false"
 )
@@ -13434,7 +13469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "105565",
   payroll_active: "false"
 )
@@ -13454,7 +13489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14955",
   payroll_active: "false"
 )
@@ -13474,7 +13509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13386",
   payroll_active: "false"
 )
@@ -13494,7 +13529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10034",
   payroll_active: "false"
 )
@@ -13514,7 +13549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14504",
   payroll_active: "true"
 )
@@ -13534,7 +13569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14159",
   payroll_active: "false"
 )
@@ -13554,7 +13589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14717",
   payroll_active: "false"
 )
@@ -13574,7 +13609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "7316",
   payroll_active: "false"
 )
@@ -13594,7 +13629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14441",
   payroll_active: "false"
 )
@@ -13614,7 +13649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13869",
   payroll_active: "false"
 )
@@ -13634,7 +13669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13898",
   payroll_active: "false"
 )
@@ -13654,7 +13689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10215",
   payroll_active: "false"
 )
@@ -13674,7 +13709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11034",
   payroll_active: "false"
 )
@@ -13694,7 +13729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13897",
   payroll_active: "false"
 )
@@ -13714,7 +13749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11512",
   payroll_active: "false"
 )
@@ -13734,7 +13769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13058",
   payroll_active: "false"
 )
@@ -13754,7 +13789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13368",
   payroll_active: "false"
 )
@@ -13774,7 +13809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14251",
   payroll_active: "false"
 )
@@ -13794,7 +13829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "5080",
   payroll_active: "true"
 )
@@ -13814,7 +13849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11633",
   payroll_active: "false"
 )
@@ -13834,7 +13869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14247",
   payroll_active: "true"
 )
@@ -13854,7 +13889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12418",
   payroll_active: "false"
 )
@@ -13874,7 +13909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14514",
   payroll_active: "false"
 )
@@ -13894,7 +13929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14672",
   payroll_active: "false"
 )
@@ -13914,7 +13949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13739",
   payroll_active: "false"
 )
@@ -13934,7 +13969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14687",
   payroll_active: "false"
 )
@@ -13954,7 +13989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10404",
   payroll_active: "false"
 )
@@ -13974,7 +14009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14442",
   payroll_active: "false"
 )
@@ -13994,7 +14029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13896",
   payroll_active: "false"
 )
@@ -14014,7 +14049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10248",
   payroll_active: "false"
 )
@@ -14034,7 +14069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14801",
   payroll_active: "false"
 )
@@ -14054,7 +14089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14136",
   payroll_active: "false"
 )
@@ -14074,7 +14109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14700",
   payroll_active: "false"
 )
@@ -14094,7 +14129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13578",
   payroll_active: "false"
 )
@@ -14114,7 +14149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14529",
   payroll_active: "false"
 )
@@ -14134,7 +14169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12183",
   payroll_active: "false"
 )
@@ -14154,7 +14189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14552",
   payroll_active: "false"
 )
@@ -14174,7 +14209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13738",
   payroll_active: "false"
 )
@@ -14194,7 +14229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11296",
   payroll_active: "false"
 )
@@ -14214,7 +14249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13676",
   payroll_active: "false"
 )
@@ -14234,7 +14269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11939",
   payroll_active: "false"
 )
@@ -14254,7 +14289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10387",
   payroll_active: "false"
 )
@@ -14274,7 +14309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13206",
   payroll_active: "true"
 )
@@ -14294,7 +14329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13059",
   payroll_active: "false"
 )
@@ -14314,7 +14349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14248",
   payroll_active: "false"
 )
@@ -14334,7 +14369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14681",
   payroll_active: "false"
 )
@@ -14354,7 +14389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13887",
   payroll_active: "false"
 )
@@ -14374,7 +14409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13979",
   payroll_active: "false"
 )
@@ -14394,7 +14429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12381",
   payroll_active: "false"
 )
@@ -14414,7 +14449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11669",
   payroll_active: "false"
 )
@@ -14434,7 +14469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12986",
   payroll_active: "false"
 )
@@ -14454,7 +14489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14673",
   payroll_active: "false"
 )
@@ -14474,7 +14509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12547",
   payroll_active: "false"
 )
@@ -14494,7 +14529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12181",
   payroll_active: "false"
 )
@@ -14514,7 +14549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "2563",
   payroll_active: "false"
 )
@@ -14534,7 +14569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13599",
   payroll_active: "false"
 )
@@ -14554,7 +14589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14544",
   payroll_active: "false"
 )
@@ -14574,7 +14609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11132",
   payroll_active: "false"
 )
@@ -14594,7 +14629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14515",
   payroll_active: "false"
 )
@@ -14614,7 +14649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12345",
   payroll_active: "false"
 )
@@ -14634,7 +14669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13925",
   payroll_active: "false"
 )
@@ -14654,7 +14689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13630",
   payroll_active: "false"
 )
@@ -14674,7 +14709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12664",
   payroll_active: "false"
 )
@@ -14694,7 +14729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14953",
   payroll_active: "false"
 )
@@ -14714,7 +14749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14489",
   payroll_active: "false"
 )
@@ -14734,7 +14769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14523",
   payroll_active: "false"
 )
@@ -14754,7 +14789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13185",
   payroll_active: "false"
 )
@@ -14774,7 +14809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10963",
   payroll_active: "false"
 )
@@ -14794,7 +14829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15041",
   payroll_active: "false"
 )
@@ -14814,7 +14849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12077",
   payroll_active: "false"
 )
@@ -14834,7 +14869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11905",
   payroll_active: "false"
 )
@@ -14854,7 +14889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15008",
   payroll_active: "true"
 )
@@ -14874,7 +14909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15044",
   payroll_active: "false"
 )
@@ -14894,7 +14929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15022",
   payroll_active: "false"
 )
@@ -14914,7 +14949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9442",
   payroll_active: "false"
 )
@@ -14934,7 +14969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10954",
   payroll_active: "false"
 )
@@ -14954,7 +14989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15043",
   payroll_active: "false"
 )
@@ -14974,7 +15009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12967",
   payroll_active: "false"
 )
@@ -14994,7 +15029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15039",
   payroll_active: "false"
 )
@@ -15014,7 +15049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11153",
   payroll_active: "false"
 )
@@ -15034,7 +15069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15042",
   payroll_active: "false"
 )
@@ -15054,7 +15089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15050",
   payroll_active: "false"
 )
@@ -15074,7 +15109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15048",
   payroll_active: "false"
 )
@@ -15094,7 +15129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12149",
   payroll_active: "false"
 )
@@ -15114,7 +15149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9786",
   payroll_active: "false"
 )
@@ -15134,7 +15169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15045",
   payroll_active: "false"
 )
@@ -15154,7 +15189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10246",
   payroll_active: "false"
 )
@@ -15174,7 +15209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12480",
   payroll_active: "false"
 )
@@ -15194,7 +15229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15038",
   payroll_active: "false"
 )
@@ -15214,7 +15249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15049",
   payroll_active: "false"
 )
@@ -15234,7 +15269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew Listing 6.14.16.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15040",
   payroll_active: "false"
 )
@@ -15254,7 +15289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150474",
   payroll_active: "false"
 )
@@ -15274,7 +15309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10585",
   payroll_active: "false"
 )
@@ -15294,7 +15329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150543",
   payroll_active: "false"
 )
@@ -15314,7 +15349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150542",
   payroll_active: "true"
 )
@@ -15334,7 +15369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150553",
   payroll_active: "false"
 )
@@ -15354,7 +15389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13466",
   payroll_active: "false"
 )
@@ -15374,7 +15409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12017",
   payroll_active: "false"
 )
@@ -15394,7 +15429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150399",
   payroll_active: "false"
 )
@@ -15414,7 +15449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -15434,7 +15469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150572",
   payroll_active: "false"
 )
@@ -15454,7 +15489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150405",
   payroll_active: "false"
 )
@@ -15474,7 +15509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15057",
   payroll_active: "false"
 )
@@ -15494,7 +15529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11472",
   payroll_active: "false"
 )
@@ -15514,7 +15549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11529",
   payroll_active: "false"
 )
@@ -15534,7 +15569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150497",
   payroll_active: "false"
 )
@@ -15554,7 +15589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13681",
   payroll_active: "false"
 )
@@ -15574,7 +15609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150454",
   payroll_active: "false"
 )
@@ -15594,7 +15629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11294",
   payroll_active: "false"
 )
@@ -15614,7 +15649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150401",
   payroll_active: "false"
 )
@@ -15634,7 +15669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150424",
   payroll_active: "false"
 )
@@ -15654,7 +15689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150603",
   payroll_active: "false"
 )
@@ -15674,7 +15709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15058",
   payroll_active: "false"
 )
@@ -15694,7 +15729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150384",
   payroll_active: "false"
 )
@@ -15714,7 +15749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150376",
   payroll_active: "false"
 )
@@ -15734,7 +15769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150487",
   payroll_active: "false"
 )
@@ -15754,7 +15789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15064",
   payroll_active: "false"
 )
@@ -15774,7 +15809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150493",
   payroll_active: "false"
 )
@@ -15794,7 +15829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150400",
   payroll_active: "false"
 )
@@ -15814,7 +15849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150396",
   payroll_active: "false"
 )
@@ -15834,7 +15869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150459",
   payroll_active: "false"
 )
@@ -15854,7 +15889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150494",
   payroll_active: "false"
 )
@@ -15874,7 +15909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150500",
   payroll_active: "false"
 )
@@ -15894,7 +15929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150379",
   payroll_active: "false"
 )
@@ -15914,7 +15949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150373",
   payroll_active: "false"
 )
@@ -15934,7 +15969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150380",
   payroll_active: "false"
 )
@@ -15954,7 +15989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12022",
   payroll_active: "true"
 )
@@ -15974,7 +16009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150377",
   payroll_active: "false"
 )
@@ -15994,7 +16029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11146",
   payroll_active: "false"
 )
@@ -16014,7 +16049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150375",
   payroll_active: "false"
 )
@@ -16034,7 +16069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150498",
   payroll_active: "false"
 )
@@ -16054,7 +16089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13649",
   payroll_active: "false"
 )
@@ -16074,7 +16109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13350",
   payroll_active: "false"
 )
@@ -16094,7 +16129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15070",
   payroll_active: "false"
 )
@@ -16114,7 +16149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150439",
   payroll_active: "false"
 )
@@ -16134,7 +16169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150398",
   payroll_active: "false"
 )
@@ -16154,7 +16189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150382",
   payroll_active: "false"
 )
@@ -16174,7 +16209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150496",
   payroll_active: "false"
 )
@@ -16194,7 +16229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150374",
   payroll_active: "false"
 )
@@ -16214,7 +16249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15063",
   payroll_active: "false"
 )
@@ -16234,7 +16269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10669",
   payroll_active: "false"
 )
@@ -16254,7 +16289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150506",
   payroll_active: "false"
 )
@@ -16274,7 +16309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "8362",
   payroll_active: "false"
 )
@@ -16294,7 +16329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13631",
   payroll_active: "false"
 )
@@ -16314,7 +16349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150416",
   payroll_active: "false"
 )
@@ -16334,7 +16369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150491",
   payroll_active: "false"
 )
@@ -16354,7 +16389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15054",
   payroll_active: "false"
 )
@@ -16374,7 +16409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12861",
   payroll_active: "false"
 )
@@ -16394,7 +16429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150495",
   payroll_active: "false"
 )
@@ -16414,7 +16449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150397",
   payroll_active: "false"
 )
@@ -16434,7 +16469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13904",
   payroll_active: "true"
 )
@@ -16454,7 +16489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11186",
   payroll_active: "false"
 )
@@ -16474,7 +16509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150458",
   payroll_active: "false"
 )
@@ -16494,7 +16529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15055",
   payroll_active: "false"
 )
@@ -16514,7 +16549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150414",
   payroll_active: "false"
 )
@@ -16534,7 +16569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12041",
   payroll_active: "false"
 )
@@ -16554,7 +16589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150440",
   payroll_active: "false"
 )
@@ -16574,7 +16609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150417",
   payroll_active: "false"
 )
@@ -16594,7 +16629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12988",
   payroll_active: "false"
 )
@@ -16614,7 +16649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150541",
   payroll_active: "false"
 )
@@ -16634,7 +16669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150489",
   payroll_active: "false"
 )
@@ -16654,7 +16689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150381",
   payroll_active: "false"
 )
@@ -16674,7 +16709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150503",
   payroll_active: "false"
 )
@@ -16694,7 +16729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150499",
   payroll_active: "false"
 )
@@ -16714,7 +16749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150394",
   payroll_active: "false"
 )
@@ -16734,7 +16769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150383",
   payroll_active: "false"
 )
@@ -16754,7 +16789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150502",
   payroll_active: "false"
 )
@@ -16774,7 +16809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11518",
   payroll_active: "false"
 )
@@ -16794,7 +16829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150507",
   payroll_active: "true"
 )
@@ -16814,7 +16849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150492",
   payroll_active: "false"
 )
@@ -16834,7 +16869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11097",
   payroll_active: "false"
 )
@@ -16854,7 +16889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150406",
   payroll_active: "false"
 )
@@ -16874,7 +16909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150415",
   payroll_active: "false"
 )
@@ -16894,7 +16929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150395",
   payroll_active: "false"
 )
@@ -16914,7 +16949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150598",
   payroll_active: "false"
 )
@@ -16934,7 +16969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11122",
   payroll_active: "false"
 )
@@ -16954,7 +16989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12038",
   payroll_active: "false"
 )
@@ -16974,7 +17009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11035",
   payroll_active: "false"
 )
@@ -16994,7 +17029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150488",
   payroll_active: "false"
 )
@@ -17014,7 +17049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150427",
   payroll_active: "false"
 )
@@ -17034,7 +17069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150407",
   payroll_active: "false"
 )
@@ -17054,7 +17089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15056",
   payroll_active: "false"
 )
@@ -17074,7 +17109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150428",
   payroll_active: "false"
 )
@@ -17094,7 +17129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150378",
   payroll_active: "false"
 )
@@ -17114,7 +17149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12864",
   payroll_active: "false"
 )
@@ -17134,7 +17169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 1.31.17.xlsx",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150504",
   payroll_active: "false"
 )
@@ -17154,7 +17189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of L1 Stage Crew Listing 2.25.16.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12969",
   payroll_active: "false"
 )
@@ -17174,7 +17209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150700",
   payroll_active: "true"
 )
@@ -17194,7 +17229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -17214,7 +17249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150781",
   payroll_active: "false"
 )
@@ -17234,7 +17269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150782",
   payroll_active: "false"
 )
@@ -17254,7 +17289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13903",
   payroll_active: "false"
 )
@@ -17274,7 +17309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150780",
   payroll_active: "false"
 )
@@ -17294,7 +17329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150783",
   payroll_active: "false"
 )
@@ -17314,7 +17349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13844",
   payroll_active: "false"
 )
@@ -17334,7 +17369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150825",
   payroll_active: "false"
 )
@@ -17354,7 +17389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150975",
   payroll_active: "false"
 )
@@ -17374,7 +17409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12312",
   payroll_active: "false"
 )
@@ -17394,7 +17429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150937",
   payroll_active: "false"
 )
@@ -17414,7 +17449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13559",
   payroll_active: "false"
 )
@@ -17434,7 +17469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150793",
   payroll_active: "false"
 )
@@ -17454,7 +17489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10275",
   payroll_active: "false"
 )
@@ -17474,7 +17509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150925",
   payroll_active: "false"
 )
@@ -17494,7 +17529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150683",
   payroll_active: "false"
 )
@@ -17514,7 +17549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150719",
   payroll_active: "false"
 )
@@ -17534,7 +17569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10219",
   payroll_active: "false"
 )
@@ -17554,7 +17589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150949",
   payroll_active: "false"
 )
@@ -17574,7 +17609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150774",
   payroll_active: "false"
 )
@@ -17594,7 +17629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150681",
   payroll_active: "false"
 )
@@ -17614,7 +17649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150689",
   payroll_active: "false"
 )
@@ -17634,7 +17669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14704",
   payroll_active: "false"
 )
@@ -17654,7 +17689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150919",
   payroll_active: "false"
 )
@@ -17674,7 +17709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12534",
   payroll_active: "false"
 )
@@ -17694,7 +17729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150668",
   payroll_active: "false"
 )
@@ -17714,7 +17749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150657",
   payroll_active: "false"
 )
@@ -17734,7 +17769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150642",
   payroll_active: "false"
 )
@@ -17754,7 +17789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13663",
   payroll_active: "false"
 )
@@ -17774,7 +17809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150952",
   payroll_active: "false"
 )
@@ -17794,7 +17829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150903",
   payroll_active: "false"
 )
@@ -17814,7 +17849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150804",
   payroll_active: "false"
 )
@@ -17834,7 +17869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150686",
   payroll_active: "false"
 )
@@ -17854,7 +17889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10280",
   payroll_active: "false"
 )
@@ -17874,7 +17909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150948",
   payroll_active: "false"
 )
@@ -17894,7 +17929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150935",
   payroll_active: "false"
 )
@@ -17914,7 +17949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150849",
   payroll_active: "false"
 )
@@ -17934,7 +17969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150672",
   payroll_active: "false"
 )
@@ -17954,7 +17989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13651",
   payroll_active: "false"
 )
@@ -17974,7 +18009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13589",
   payroll_active: "false"
 )
@@ -17994,7 +18029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150656",
   payroll_active: "false"
 )
@@ -18014,7 +18049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150667",
   payroll_active: "false"
 )
@@ -18034,7 +18069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11473",
   payroll_active: "false"
 )
@@ -18054,7 +18089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150920",
   payroll_active: "false"
 )
@@ -18074,7 +18109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150788",
   payroll_active: "false"
 )
@@ -18094,7 +18129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150708",
   payroll_active: "false"
 )
@@ -18114,7 +18149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150820",
   payroll_active: "false"
 )
@@ -18134,7 +18169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150831",
   payroll_active: "false"
 )
@@ -18154,7 +18189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150669",
   payroll_active: "false"
 )
@@ -18174,7 +18209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13894",
   payroll_active: "false"
 )
@@ -18194,7 +18229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150665",
   payroll_active: "false"
 )
@@ -18214,7 +18249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150685",
   payroll_active: "false"
 )
@@ -18234,7 +18269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150677",
   payroll_active: "false"
 )
@@ -18254,7 +18289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150671",
   payroll_active: "false"
 )
@@ -18274,7 +18309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150659",
   payroll_active: "false"
 )
@@ -18294,7 +18329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150924",
   payroll_active: "false"
 )
@@ -18314,7 +18349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150900",
   payroll_active: "false"
 )
@@ -18334,7 +18369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11102",
   payroll_active: "false"
 )
@@ -18354,7 +18389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150809",
   payroll_active: "false"
 )
@@ -18374,7 +18409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150666",
   payroll_active: "true"
 )
@@ -18394,7 +18429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150946",
   payroll_active: "false"
 )
@@ -18414,7 +18449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12729",
   payroll_active: "false"
 )
@@ -18434,7 +18469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150902",
   payroll_active: "false"
 )
@@ -18454,7 +18489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150687",
   payroll_active: "false"
 )
@@ -18474,7 +18509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150710",
   payroll_active: "false"
 )
@@ -18494,7 +18529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150684",
   payroll_active: "false"
 )
@@ -18514,7 +18549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150789",
   payroll_active: "false"
 )
@@ -18534,7 +18569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150679",
   payroll_active: "false"
 )
@@ -18554,7 +18589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12716",
   payroll_active: "false"
 )
@@ -18574,7 +18609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150648",
   payroll_active: "false"
 )
@@ -18594,7 +18629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150728",
   payroll_active: "false"
 )
@@ -18614,7 +18649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150639",
   payroll_active: "false"
 )
@@ -18634,7 +18669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150832",
   payroll_active: "false"
 )
@@ -18654,7 +18689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150711",
   payroll_active: "false"
 )
@@ -18674,7 +18709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13905",
   payroll_active: "false"
 )
@@ -18694,7 +18729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150938",
   payroll_active: "false"
 )
@@ -18714,7 +18749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150678",
   payroll_active: "false"
 )
@@ -18734,7 +18769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150944",
   payroll_active: "false"
 )
@@ -18754,7 +18789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150779",
   payroll_active: "false"
 )
@@ -18774,7 +18809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150654",
   payroll_active: "false"
 )
@@ -18794,7 +18829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150673",
   payroll_active: "false"
 )
@@ -18814,7 +18849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150972",
   payroll_active: "false"
 )
@@ -18834,7 +18869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150655",
   payroll_active: "false"
 )
@@ -18854,7 +18889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150690",
   payroll_active: "false"
 )
@@ -18874,7 +18909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150660",
   payroll_active: "false"
 )
@@ -18894,7 +18929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150680",
   payroll_active: "false"
 )
@@ -18914,7 +18949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150727",
   payroll_active: "false"
 )
@@ -18934,7 +18969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150808",
   payroll_active: "false"
 )
@@ -18954,7 +18989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150637",
   payroll_active: "true"
 )
@@ -18974,7 +19009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150853",
   payroll_active: "false"
 )
@@ -18994,7 +19029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150850",
   payroll_active: "false"
 )
@@ -19014,7 +19049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150645",
   payroll_active: "false"
 )
@@ -19034,7 +19069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12026",
   payroll_active: "false"
 )
@@ -19054,7 +19089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150638",
   payroll_active: "true"
 )
@@ -19074,7 +19109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150674",
   payroll_active: "false"
 )
@@ -19094,7 +19129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11026",
   payroll_active: "false"
 )
@@ -19114,7 +19149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150851",
   payroll_active: "false"
 )
@@ -19134,7 +19169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150934",
   payroll_active: "false"
 )
@@ -19154,7 +19189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150942",
   payroll_active: "false"
 )
@@ -19174,7 +19209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150894",
   payroll_active: "false"
 )
@@ -19194,7 +19229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150941",
   payroll_active: "false"
 )
@@ -19214,7 +19249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150650",
   payroll_active: "false"
 )
@@ -19234,7 +19269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150936",
   payroll_active: "false"
 )
@@ -19254,7 +19289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150956",
   payroll_active: "false"
 )
@@ -19274,7 +19309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150712",
   payroll_active: "false"
 )
@@ -19294,7 +19329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10992",
   payroll_active: "false"
 )
@@ -19314,7 +19349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13870",
   payroll_active: "false"
 )
@@ -19334,7 +19369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150670",
   payroll_active: "false"
 )
@@ -19354,7 +19389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150787",
   payroll_active: "false"
 )
@@ -19374,7 +19409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150629",
   payroll_active: "false"
 )
@@ -19394,7 +19429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10403",
   payroll_active: "false"
 )
@@ -19414,7 +19449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150636",
   payroll_active: "false"
 )
@@ -19434,7 +19469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150703",
   payroll_active: "false"
 )
@@ -19454,7 +19489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150794",
   payroll_active: "false"
 )
@@ -19474,7 +19509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10961",
   payroll_active: "false"
 )
@@ -19494,7 +19529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150641",
   payroll_active: "true"
 )
@@ -19514,7 +19549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150640",
   payroll_active: "true"
 )
@@ -19534,7 +19569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150945",
   payroll_active: "false"
 )
@@ -19554,7 +19589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150676",
   payroll_active: "false"
 )
@@ -19574,7 +19609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150646",
   payroll_active: "false"
 )
@@ -19594,7 +19629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13037",
   payroll_active: "false"
 )
@@ -19614,7 +19649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150647",
   payroll_active: "true"
 )
@@ -19634,7 +19669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "150963",
   payroll_active: "false"
 )
@@ -19654,7 +19689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11181",
   payroll_active: "false"
 )
@@ -19674,7 +19709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150688",
   payroll_active: "false"
 )
@@ -19694,7 +19729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150649",
   payroll_active: "false"
 )
@@ -19714,7 +19749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150957",
   payroll_active: "false"
 )
@@ -19734,7 +19769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150682",
   payroll_active: "false"
 )
@@ -19754,7 +19789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150950",
   payroll_active: "false"
 )
@@ -19774,7 +19809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150821",
   payroll_active: "false"
 )
@@ -19794,7 +19829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150709",
   payroll_active: "false"
 )
@@ -19814,7 +19849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150675",
   payroll_active: "false"
 )
@@ -19834,7 +19869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11040",
   payroll_active: "false"
 )
@@ -19854,7 +19889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150658",
   payroll_active: "false"
 )
@@ -19874,7 +19909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150951",
   payroll_active: "false"
 )
@@ -19894,7 +19929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150643",
   payroll_active: "false"
 )
@@ -19914,7 +19949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 11.3.17.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150833",
   payroll_active: "false"
 )
@@ -19934,7 +19969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150790",
   payroll_active: "false"
 )
@@ -19954,7 +19989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151094",
   payroll_active: "false"
 )
@@ -19974,7 +20009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151069",
   payroll_active: "true"
 )
@@ -19994,7 +20029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151028",
   payroll_active: "false"
 )
@@ -20014,7 +20049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151093",
   payroll_active: "false"
 )
@@ -20034,7 +20069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12340",
   payroll_active: "false"
 )
@@ -20054,7 +20089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12908",
   payroll_active: "false"
 )
@@ -20074,7 +20109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13728",
   payroll_active: "false"
 )
@@ -20094,7 +20129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13692",
   payroll_active: "false"
 )
@@ -20114,7 +20149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151085",
   payroll_active: "false"
 )
@@ -20134,7 +20169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13279",
   payroll_active: "false"
 )
@@ -20154,7 +20189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151084",
   payroll_active: "false"
 )
@@ -20174,7 +20209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150983",
   payroll_active: "false"
 )
@@ -20194,7 +20229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151082",
   payroll_active: "false"
 )
@@ -20214,7 +20249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151083",
   payroll_active: "false"
 )
@@ -20234,7 +20269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151086",
   payroll_active: "false"
 )
@@ -20254,7 +20289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11999",
   payroll_active: "false"
 )
@@ -20274,7 +20309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151050",
   payroll_active: "false"
 )
@@ -20294,7 +20329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151091",
   payroll_active: "false"
 )
@@ -20314,7 +20349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151102",
   payroll_active: "false"
 )
@@ -20334,7 +20369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151092",
   payroll_active: "false"
 )
@@ -20354,7 +20389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12422",
   payroll_active: "false"
 )
@@ -20374,7 +20409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151087",
   payroll_active: "false"
 )
@@ -20394,7 +20429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151089",
   payroll_active: "false"
 )
@@ -20414,7 +20449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150971",
   payroll_active: "false"
 )
@@ -20434,7 +20469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151099",
   payroll_active: "true"
 )
@@ -20454,7 +20489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150995",
   payroll_active: "false"
 )
@@ -20474,7 +20509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151049",
   payroll_active: "false"
 )
@@ -20494,7 +20529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151088",
   payroll_active: "false"
 )
@@ -20514,7 +20549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150987",
   payroll_active: "false"
 )
@@ -20534,7 +20569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150986",
   payroll_active: "false"
 )
@@ -20554,7 +20589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151041",
   payroll_active: "true"
 )
@@ -20574,7 +20609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151090",
   payroll_active: "false"
 )
@@ -20594,7 +20629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151096",
   payroll_active: "false"
 )
@@ -20614,7 +20649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150988",
   payroll_active: "false"
 )
@@ -20634,7 +20669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of Stage Crew listing 5.9.18.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151095",
   payroll_active: "false"
 )
@@ -20654,7 +20689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151133",
   payroll_active: "true"
 )
@@ -20674,7 +20709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151116",
   payroll_active: "true"
 )
@@ -20694,7 +20729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -20714,7 +20749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -20734,7 +20769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -20754,7 +20789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -20774,7 +20809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151124",
   payroll_active: "false"
 )
@@ -20794,7 +20829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -20814,7 +20849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -20834,7 +20869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -20854,7 +20889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -20874,7 +20909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151158",
   payroll_active: "true"
 )
@@ -20894,7 +20929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -20914,7 +20949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -20934,7 +20969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -20954,7 +20989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151160",
   payroll_active: "false"
 )
@@ -20974,7 +21009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151240",
   payroll_active: "false"
 )
@@ -20994,7 +21029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -21014,7 +21049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151245",
   payroll_active: "true"
 )
@@ -21034,7 +21069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151248",
   payroll_active: "false"
 )
@@ -21054,7 +21089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -21074,7 +21109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151184",
   payroll_active: "false"
 )
@@ -21094,7 +21129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12320",
   payroll_active: "false"
 )
@@ -21114,7 +21149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151183",
   payroll_active: "false"
 )
@@ -21134,7 +21169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151140",
   payroll_active: "true"
 )
@@ -21154,7 +21189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151244",
   payroll_active: "false"
 )
@@ -21174,7 +21209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151247",
   payroll_active: "true"
 )
@@ -21194,7 +21229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151230",
   payroll_active: "false"
 )
@@ -21214,7 +21249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151180",
   payroll_active: "false"
 )
@@ -21234,7 +21269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151221",
   payroll_active: "false"
 )
@@ -21254,7 +21289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151156",
   payroll_active: "false"
 )
@@ -21274,7 +21309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151214",
   payroll_active: "false"
 )
@@ -21294,7 +21329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151218",
   payroll_active: "false"
 )
@@ -21314,7 +21349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151216",
   payroll_active: "false"
 )
@@ -21334,7 +21369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Auto created via import of tmp.csv",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151215",
   payroll_active: "false"
 )
@@ -21354,7 +21389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151291",
   payroll_active: "false"
 )
@@ -21374,7 +21409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151350",
   payroll_active: "true"
 )
@@ -21394,7 +21429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -21414,7 +21449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12056",
   payroll_active: "true"
 )
@@ -21434,7 +21469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151613",
   payroll_active: "false"
 )
@@ -21454,7 +21489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151620",
   payroll_active: "true"
 )
@@ -21474,7 +21509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151634",
   payroll_active: "true"
 )
@@ -21494,7 +21529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151471",
   payroll_active: "false"
 )
@@ -21514,7 +21549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11438",
   payroll_active: "false"
 )
@@ -21534,7 +21569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13473",
   payroll_active: "false"
 )
@@ -21554,7 +21589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11726",
   payroll_active: "false"
 )
@@ -21574,7 +21609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151483",
   payroll_active: "false"
 )
@@ -21594,7 +21629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12678",
   payroll_active: "false"
 )
@@ -21614,7 +21649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151279",
   payroll_active: "false"
 )
@@ -21634,7 +21669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11087",
   payroll_active: "false"
 )
@@ -21654,7 +21689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14137",
   payroll_active: "false"
 )
@@ -21674,7 +21709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13961",
   payroll_active: "false"
 )
@@ -21694,7 +21729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150854",
   payroll_active: "false"
 )
@@ -21714,7 +21749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151370",
   payroll_active: "false"
 )
@@ -21734,7 +21769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11001",
   payroll_active: "false"
 )
@@ -21754,7 +21789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14428",
   payroll_active: "false"
 )
@@ -21774,7 +21809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151373",
   payroll_active: "false"
 )
@@ -21794,7 +21829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151575",
   payroll_active: "false"
 )
@@ -21814,7 +21849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151289",
   payroll_active: "false"
 )
@@ -21834,7 +21869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150996",
   payroll_active: "false"
 )
@@ -21854,7 +21889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151522",
   payroll_active: "false"
 )
@@ -21874,7 +21909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151489",
   payroll_active: "false"
 )
@@ -21894,7 +21929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151376",
   payroll_active: "false"
 )
@@ -21914,7 +21949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151490",
   payroll_active: "false"
 )
@@ -21934,7 +21969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151360",
   payroll_active: "false"
 )
@@ -21954,7 +21989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150490",
   payroll_active: "false"
 )
@@ -21974,7 +22009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151382",
   payroll_active: "false"
 )
@@ -21994,7 +22029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151470",
   payroll_active: "false"
 )
@@ -22014,7 +22049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10220",
   payroll_active: "false"
 )
@@ -22034,7 +22069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151432",
   payroll_active: "false"
 )
@@ -22054,7 +22089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151008",
   payroll_active: "false"
 )
@@ -22074,7 +22109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151518",
   payroll_active: "false"
 )
@@ -22094,7 +22129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11615",
   payroll_active: "false"
 )
@@ -22114,7 +22149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151403",
   payroll_active: "false"
 )
@@ -22134,7 +22169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151257",
   payroll_active: "false"
 )
@@ -22154,7 +22189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151478",
   payroll_active: "false"
 )
@@ -22174,7 +22209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13577",
   payroll_active: "false"
 )
@@ -22194,7 +22229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151368",
   payroll_active: "false"
 )
@@ -22214,7 +22249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13351",
   payroll_active: "false"
 )
@@ -22234,7 +22269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151572",
   payroll_active: "false"
 )
@@ -22254,7 +22289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13377",
   payroll_active: "false"
 )
@@ -22274,7 +22309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151605",
   payroll_active: "false"
 )
@@ -22294,7 +22329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151600",
   payroll_active: "false"
 )
@@ -22314,7 +22349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151565",
   payroll_active: "false"
 )
@@ -22334,7 +22369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150551",
   payroll_active: "false"
 )
@@ -22354,7 +22389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151559",
   payroll_active: "false"
 )
@@ -22374,7 +22409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14799",
   payroll_active: "false"
 )
@@ -22394,7 +22429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151374",
   payroll_active: "false"
 )
@@ -22414,7 +22449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151241",
   payroll_active: "false"
 )
@@ -22434,7 +22469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151418",
   payroll_active: "false"
 )
@@ -22454,7 +22489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151624",
   payroll_active: "false"
 )
@@ -22474,7 +22509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151255",
   payroll_active: "false"
 )
@@ -22494,7 +22529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151195",
   payroll_active: "false"
 )
@@ -22514,7 +22549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151632",
   payroll_active: "false"
 )
@@ -22534,7 +22569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12717",
   payroll_active: "false"
 )
@@ -22554,7 +22589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151479",
   payroll_active: "false"
 )
@@ -22574,7 +22609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15062",
   payroll_active: "false"
 )
@@ -22594,7 +22629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11005",
   payroll_active: "true"
 )
@@ -22614,7 +22649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151387",
   payroll_active: "false"
 )
@@ -22634,7 +22669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150664",
   payroll_active: "false"
 )
@@ -22654,7 +22689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151264",
   payroll_active: "false"
 )
@@ -22674,7 +22709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151206",
   payroll_active: "false"
 )
@@ -22694,7 +22729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151057",
   payroll_active: "false"
 )
@@ -22714,7 +22749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10645",
   payroll_active: "false"
 )
@@ -22734,7 +22769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11717",
   payroll_active: "false"
 )
@@ -22754,7 +22789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151591",
   payroll_active: "false"
 )
@@ -22774,7 +22809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150965",
   payroll_active: "false"
 )
@@ -22794,7 +22829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14605",
   payroll_active: "false"
 )
@@ -22814,7 +22849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151384",
   payroll_active: "false"
 )
@@ -22834,7 +22869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11163",
   payroll_active: "false"
 )
@@ -22854,7 +22889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151469",
   payroll_active: "false"
 )
@@ -22874,7 +22909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151389",
   payroll_active: "false"
 )
@@ -22894,7 +22929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151553",
   payroll_active: "false"
 )
@@ -22914,7 +22949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13128",
   payroll_active: "false"
 )
@@ -22934,7 +22969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151488",
   payroll_active: "false"
 )
@@ -22954,7 +22989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11184",
   payroll_active: "false"
 )
@@ -22974,7 +23009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151614",
   payroll_active: "false"
 )
@@ -22994,7 +23029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151615",
   payroll_active: "false"
 )
@@ -23014,7 +23049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151023",
   payroll_active: "false"
 )
@@ -23034,7 +23069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13072",
   payroll_active: "false"
 )
@@ -23054,7 +23089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151566",
   payroll_active: "false"
 )
@@ -23074,7 +23109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10547",
   payroll_active: "false"
 )
@@ -23094,7 +23129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13910",
   payroll_active: "false"
 )
@@ -23114,7 +23149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151472",
   payroll_active: "false"
 )
@@ -23134,7 +23169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11120",
   payroll_active: "false"
 )
@@ -23154,7 +23189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12914",
   payroll_active: "false"
 )
@@ -23174,7 +23209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151541",
   payroll_active: "false"
 )
@@ -23194,7 +23229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150999",
   payroll_active: "false"
 )
@@ -23214,7 +23249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151610",
   payroll_active: "false"
 )
@@ -23234,7 +23269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151254",
   payroll_active: "false"
 )
@@ -23254,7 +23289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151493",
   payroll_active: "false"
 )
@@ -23274,7 +23309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151567",
   payroll_active: "false"
 )
@@ -23294,7 +23329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151603",
   payroll_active: "false"
 )
@@ -23314,7 +23349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151443",
   payroll_active: "false"
 )
@@ -23334,7 +23369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151375",
   payroll_active: "true"
 )
@@ -23354,7 +23389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151564",
   payroll_active: "false"
 )
@@ -23374,7 +23409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151599",
   payroll_active: "false"
 )
@@ -23394,7 +23429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151437",
   payroll_active: "false"
 )
@@ -23414,7 +23449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151594",
   payroll_active: "false"
 )
@@ -23434,7 +23469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150558",
   payroll_active: "false"
 )
@@ -23454,7 +23489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13246",
   payroll_active: "false"
 )
@@ -23474,7 +23509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151604",
   payroll_active: "false"
 )
@@ -23494,7 +23529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151476",
   payroll_active: "false"
 )
@@ -23514,7 +23549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12342",
   payroll_active: "false"
 )
@@ -23534,7 +23569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151369",
   payroll_active: "false"
 )
@@ -23554,7 +23589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151388",
   payroll_active: "false"
 )
@@ -23574,7 +23609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151190",
   payroll_active: "false"
 )
@@ -23594,7 +23629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12197",
   payroll_active: "false"
 )
@@ -23614,7 +23649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13464",
   payroll_active: "false"
 )
@@ -23634,7 +23669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151114",
   payroll_active: "false"
 )
@@ -23654,7 +23689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151571",
   payroll_active: "false"
 )
@@ -23674,7 +23709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151563",
   payroll_active: "true"
 )
@@ -23694,7 +23729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151547",
   payroll_active: "false"
 )
@@ -23714,7 +23749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151577",
   payroll_active: "false"
 )
@@ -23734,7 +23769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151460",
   payroll_active: "false"
 )
@@ -23754,7 +23789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151428",
   payroll_active: "false"
 )
@@ -23774,7 +23809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151512",
   payroll_active: "false"
 )
@@ -23794,7 +23829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151548",
   payroll_active: "false"
 )
@@ -23814,7 +23849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151641",
   payroll_active: "false"
 )
@@ -23834,7 +23869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151468",
   payroll_active: "false"
 )
@@ -23854,7 +23889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151525",
   payroll_active: "false"
 )
@@ -23874,7 +23909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151010",
   payroll_active: "false"
 )
@@ -23894,7 +23929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151391",
   payroll_active: "false"
 )
@@ -23914,7 +23949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12847",
   payroll_active: "false"
 )
@@ -23934,7 +23969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12910",
   payroll_active: "false"
 )
@@ -23954,7 +23989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11161",
   payroll_active: "false"
 )
@@ -23974,7 +24009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151386",
   payroll_active: "false"
 )
@@ -23994,7 +24029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151431",
   payroll_active: "false"
 )
@@ -24014,7 +24049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150841",
   payroll_active: "false"
 )
@@ -24034,7 +24069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151560",
   payroll_active: "false"
 )
@@ -24054,7 +24089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13947",
   payroll_active: "false"
 )
@@ -24074,7 +24109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151262",
   payroll_active: "false"
 )
@@ -24094,7 +24129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151568",
   payroll_active: "false"
 )
@@ -24114,7 +24149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12366",
   payroll_active: "false"
 )
@@ -24134,7 +24169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151256",
   payroll_active: "false"
 )
@@ -24154,7 +24189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151200",
   payroll_active: "false"
 )
@@ -24174,7 +24209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150895",
   payroll_active: "false"
 )
@@ -24194,7 +24229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151533",
   payroll_active: "false"
 )
@@ -24214,7 +24249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151440",
   payroll_active: "false"
 )
@@ -24234,7 +24269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151392",
   payroll_active: "false"
 )
@@ -24254,7 +24289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151379",
   payroll_active: "false"
 )
@@ -24274,7 +24309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151380",
   payroll_active: "false"
 )
@@ -24294,7 +24329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151555",
   payroll_active: "false"
 )
@@ -24314,7 +24349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151473",
   payroll_active: "false"
 )
@@ -24334,7 +24369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151394",
   payroll_active: "false"
 )
@@ -24354,7 +24389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13070",
   payroll_active: "false"
 )
@@ -24374,7 +24409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151430",
   payroll_active: "false"
 )
@@ -24394,7 +24429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151126",
   payroll_active: "false"
 )
@@ -24414,7 +24449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151372",
   payroll_active: "false"
 )
@@ -24434,7 +24469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150456",
   payroll_active: "false"
 )
@@ -24454,7 +24489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151637",
   payroll_active: "false"
 )
@@ -24474,7 +24509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13133",
   payroll_active: "false"
 )
@@ -24494,7 +24529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151573",
   payroll_active: "false"
 )
@@ -24514,7 +24549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151480",
   payroll_active: "false"
 )
@@ -24534,7 +24569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151612",
   payroll_active: "false"
 )
@@ -24554,7 +24589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151412",
   payroll_active: "false"
 )
@@ -24574,7 +24609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151402",
   payroll_active: "false"
 )
@@ -24594,7 +24629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12856",
   payroll_active: "false"
 )
@@ -24614,7 +24649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151513",
   payroll_active: "false"
 )
@@ -24634,7 +24669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151258",
   payroll_active: "false"
 )
@@ -24654,7 +24689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151528",
   payroll_active: "false"
 )
@@ -24674,7 +24709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151526",
   payroll_active: "false"
 )
@@ -24694,7 +24729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151485",
   payroll_active: "false"
 )
@@ -24714,7 +24749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151340",
   payroll_active: "false"
 )
@@ -24734,7 +24769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151495",
   payroll_active: "false"
 )
@@ -24754,7 +24789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151434",
   payroll_active: "false"
 )
@@ -24774,7 +24809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13327",
   payroll_active: "false"
 )
@@ -24794,7 +24829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151436",
   payroll_active: "false"
 )
@@ -24814,7 +24849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11700",
   payroll_active: "false"
 )
@@ -24834,7 +24869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151561",
   payroll_active: "false"
 )
@@ -24854,7 +24889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13459",
   payroll_active: "false"
 )
@@ -24874,7 +24909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12949",
   payroll_active: "false"
 )
@@ -24894,7 +24929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13124",
   payroll_active: "false"
 )
@@ -24914,7 +24949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151362",
   payroll_active: "false"
 )
@@ -24934,7 +24969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151390",
   payroll_active: "false"
 )
@@ -24954,7 +24989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151366",
   payroll_active: "true"
 )
@@ -24974,7 +25009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151461",
   payroll_active: "false"
 )
@@ -24994,7 +25029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151319",
   payroll_active: "false"
 )
@@ -25014,7 +25049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151290",
   payroll_active: "true"
 )
@@ -25034,7 +25069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150822",
   payroll_active: "false"
 )
@@ -25054,7 +25089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151381",
   payroll_active: "false"
 )
@@ -25074,7 +25109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151400",
   payroll_active: "false"
 )
@@ -25094,7 +25129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151595",
   payroll_active: "false"
 )
@@ -25114,7 +25149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150901",
   payroll_active: "false"
 )
@@ -25134,7 +25169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151576",
   payroll_active: "false"
 )
@@ -25154,7 +25189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151477",
   payroll_active: "false"
 )
@@ -25174,7 +25209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151385",
   payroll_active: "false"
 )
@@ -25194,7 +25229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151000",
   payroll_active: "false"
 )
@@ -25214,7 +25249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151619",
   payroll_active: "false"
 )
@@ -25234,7 +25269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151517",
   payroll_active: "false"
 )
@@ -25254,7 +25289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151516",
   payroll_active: "false"
 )
@@ -25274,7 +25309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "7274",
   payroll_active: "false"
 )
@@ -25294,7 +25329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151569",
   payroll_active: "false"
 )
@@ -25314,7 +25349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13945",
   payroll_active: "false"
 )
@@ -25334,7 +25369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12456",
   payroll_active: "false"
 )
@@ -25354,7 +25389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151011",
   payroll_active: "false"
 )
@@ -25374,7 +25409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151213",
   payroll_active: "false"
 )
@@ -25394,7 +25429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150391",
   payroll_active: "false"
 )
@@ -25414,7 +25449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11189",
   payroll_active: "false"
 )
@@ -25434,7 +25469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150567",
   payroll_active: "false"
 )
@@ -25454,7 +25489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151608",
   payroll_active: "true"
 )
@@ -25474,7 +25509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151371",
   payroll_active: "false"
 )
@@ -25494,7 +25529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14787",
   payroll_active: "false"
 )
@@ -25514,7 +25549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9606",
   payroll_active: "false"
 )
@@ -25534,7 +25569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151367",
   payroll_active: "false"
 )
@@ -25554,7 +25589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13151",
   payroll_active: "false"
 )
@@ -25574,7 +25609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151519",
   payroll_active: "false"
 )
@@ -25594,7 +25629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9996",
   payroll_active: "false"
 )
@@ -25614,7 +25649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151606",
   payroll_active: "false"
 )
@@ -25634,7 +25669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12078",
   payroll_active: "false"
 )
@@ -25654,7 +25689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151260",
   payroll_active: "false"
 )
@@ -25674,7 +25709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151602",
   payroll_active: "false"
 )
@@ -25694,7 +25729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151625",
   payroll_active: "false"
 )
@@ -25714,7 +25749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11046",
   payroll_active: "false"
 )
@@ -25734,7 +25769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151401",
   payroll_active: "false"
 )
@@ -25754,7 +25789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151427",
   payroll_active: "false"
 )
@@ -25774,7 +25809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150580",
   payroll_active: "false"
 )
@@ -25794,7 +25829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151638",
   payroll_active: "false"
 )
@@ -25814,7 +25849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151154",
   payroll_active: "false"
 )
@@ -25834,7 +25869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13354",
   payroll_active: "false"
 )
@@ -25854,7 +25889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "13703",
   payroll_active: "false"
 )
@@ -25874,7 +25909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151601",
   payroll_active: "false"
 )
@@ -25894,7 +25929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151582",
   payroll_active: "false"
 )
@@ -25914,7 +25949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150372",
   payroll_active: "false"
 )
@@ -25934,7 +25969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11548",
   payroll_active: "false"
 )
@@ -25954,7 +25989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12909",
   payroll_active: "false"
 )
@@ -25974,7 +26009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151514",
   payroll_active: "false"
 )
@@ -25994,7 +26029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12411",
   payroll_active: "false"
 )
@@ -26014,7 +26049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151521",
   payroll_active: "false"
 )
@@ -26034,7 +26069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151556",
   payroll_active: "false"
 )
@@ -26054,7 +26089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151530",
   payroll_active: "false"
 )
@@ -26074,7 +26109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151484",
   payroll_active: "false"
 )
@@ -26094,7 +26129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12179",
   payroll_active: "false"
 )
@@ -26114,7 +26149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151482",
   payroll_active: "false"
 )
@@ -26134,7 +26169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151481",
   payroll_active: "false"
 )
@@ -26154,7 +26189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151474",
   payroll_active: "false"
 )
@@ -26174,7 +26209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12032",
   payroll_active: "false"
 )
@@ -26194,7 +26229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151383",
   payroll_active: "false"
 )
@@ -26214,7 +26249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151598",
   payroll_active: "false"
 )
@@ -26234,7 +26269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151234",
   payroll_active: "false"
 )
@@ -26254,7 +26289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "9500",
   payroll_active: "false"
 )
@@ -26274,7 +26309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10385",
   payroll_active: "false"
 )
@@ -26294,7 +26329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10300",
   payroll_active: "false"
 )
@@ -26314,7 +26349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151529",
   payroll_active: "false"
 )
@@ -26334,7 +26369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11800",
   payroll_active: "false"
 )
@@ -26354,7 +26389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151562",
   payroll_active: "false"
 )
@@ -26374,7 +26409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151596",
   payroll_active: "false"
 )
@@ -26394,7 +26429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151583",
   payroll_active: "false"
 )
@@ -26414,7 +26449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151305",
   payroll_active: "false"
 )
@@ -26434,7 +26469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151570",
   payroll_active: "false"
 )
@@ -26454,7 +26489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14590",
   payroll_active: "false"
 )
@@ -26474,7 +26509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12951",
   payroll_active: "false"
 )
@@ -26494,7 +26529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11168",
   payroll_active: "false"
 )
@@ -26514,7 +26549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151179",
   payroll_active: "false"
 )
@@ -26534,7 +26569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "10606",
   payroll_active: "false"
 )
@@ -26554,7 +26589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150846",
   payroll_active: "false"
 )
@@ -26574,7 +26609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151574",
   payroll_active: "false"
 )
@@ -26594,7 +26629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151377",
   payroll_active: "false"
 )
@@ -26614,7 +26649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151475",
   payroll_active: "false"
 )
@@ -26634,7 +26669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12451",
   payroll_active: "false"
 )
@@ -26654,7 +26689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151306",
   payroll_active: "false"
 )
@@ -26674,7 +26709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "12306",
   payroll_active: "false"
 )
@@ -26694,7 +26729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151545",
   payroll_active: "false"
 )
@@ -26714,7 +26749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151361",
   payroll_active: "false"
 )
@@ -26734,7 +26769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151393",
   payroll_active: "false"
 )
@@ -26754,7 +26789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150784",
   payroll_active: "false"
 )
@@ -26774,7 +26809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151378",
   payroll_active: "false"
 )
@@ -26794,7 +26829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14147",
   payroll_active: "false"
 )
@@ -26814,7 +26849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151029",
   payroll_active: "false"
 )
@@ -26834,7 +26869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151274",
   payroll_active: "false"
 )
@@ -26854,7 +26889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "150555",
   payroll_active: "false"
 )
@@ -26874,7 +26909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151609",
   payroll_active: "false"
 )
@@ -26894,7 +26929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "6410",
   payroll_active: "false"
 )
@@ -26914,7 +26949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151511",
   payroll_active: "false"
 )
@@ -26934,7 +26969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151607",
   payroll_active: "false"
 )
@@ -26954,7 +26989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151593",
   payroll_active: "false"
 )
@@ -26974,7 +27009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151459",
   payroll_active: "false"
 )
@@ -26994,7 +27029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "11704",
   payroll_active: "false"
 )
@@ -27014,7 +27049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151618",
   payroll_active: "false"
 )
@@ -27034,7 +27069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "15046",
   payroll_active: "false"
 )
@@ -27054,7 +27089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151411",
   payroll_active: "false"
 )
@@ -27074,7 +27109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "5320",
   payroll_active: "false"
 )
@@ -27094,7 +27129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151425",
   payroll_active: "false"
 )
@@ -27114,7 +27149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151266",
   payroll_active: "false"
 )
@@ -27134,7 +27169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "14111",
   payroll_active: "false"
 )
@@ -27154,7 +27189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "Created via import of roster_12-24-19.xls",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "151364",
   payroll_active: "true"
 )
@@ -27174,7 +27209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -27194,7 +27229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -27214,7 +27249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -27234,7 +27269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -27254,7 +27289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -27274,7 +27309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -27294,7 +27329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -27314,7 +27349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -27334,7 +27369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "",
   payroll_active: "false"
 )
@@ -27354,7 +27389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27374,7 +27409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27394,7 +27429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27414,7 +27449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27434,7 +27469,7 @@ Employee.create(
   keycard_number: "183-11825-142897",
   dob: "",
   notes: "",
-  classification: "Basic",
+  employee_classification_id: 1,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27454,7 +27489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27474,7 +27509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27494,7 +27529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27514,7 +27549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27534,7 +27569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27554,7 +27589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27574,7 +27609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27594,7 +27629,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27614,7 +27649,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27634,7 +27669,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27654,7 +27689,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27674,7 +27709,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27694,7 +27729,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27714,7 +27749,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27734,7 +27769,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27754,7 +27789,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27774,7 +27809,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27794,7 +27829,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27814,7 +27849,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27834,7 +27869,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27854,7 +27889,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27874,7 +27909,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27894,7 +27929,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27914,7 +27949,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27934,7 +27969,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27954,7 +27989,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27974,7 +28009,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -27994,7 +28029,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28014,7 +28049,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28034,7 +28069,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28054,7 +28089,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28074,7 +28109,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28094,7 +28129,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28114,7 +28149,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28134,7 +28169,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28154,7 +28189,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28174,7 +28209,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28194,7 +28229,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28214,7 +28249,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28234,7 +28269,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28254,7 +28289,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28274,7 +28309,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28294,7 +28329,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28314,7 +28349,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28334,7 +28369,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28354,7 +28389,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28374,7 +28409,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28394,7 +28429,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28414,7 +28449,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28434,7 +28469,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28454,7 +28489,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28474,7 +28509,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28494,7 +28529,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28514,7 +28549,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28534,7 +28569,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28554,7 +28589,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )
@@ -28574,7 +28609,7 @@ Employee.create(
   keycard_number: "",
   dob: "",
   notes: "",
-  classification: "Extra",
+  employee_classification_id: 2,
   payroll_code: "",
   payroll_active: "true"
 )

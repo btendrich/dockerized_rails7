@@ -17,7 +17,7 @@
 	      <th class='p-3 w-1/5'><%= sortable_link_for :last_name, text: "Last Name", type: :alpha %></th>
 	      <th class='p-3 w-1/5'><%= sortable_link_for :first_name, text: "First Name", type: :alpha %></th>
 	      <th class='p-3 w-1/5'><%= sortable_link_for :payroll_active, text: "Payroll Status" %></th>
-	      <th class='p-3 w-1/5'><%= sortable_link_for :classification %></th>
+	      <th class='p-3 w-1/5'><%= sortable_link_for :employee_classification_id %></th>
 	      <th class='p-3 w-1/5 text-right'><%= link_to 'New Employee', new_employee_path, class: 'bg-teal-600 text-gray-100 p-2 mr-2 hover:bg-teal-700 rounded-xl'%></th>
 	    </tr>
 	  </thead>
@@ -30,7 +30,7 @@
 					<button class="<%= employee_payroll_active_color_code(employee)%> w-1/2"><%= employee.payroll_active? ? "Active" : "Inactive" %></button>
 				</td>
 	      <td class='p-1.5 text-center'>
-					<button class="<%= employee_classification_color_code(employee) %> w-1/2"><%= employee.classification %></button>
+					<button class="<%= employee_classification_color_code(employee) %> w-1/2"><%= employee.employee_classification.name %></button>
 				</td>
 	      <td class='p-1.5 text-right'>
 	      	<%= link_to 'Show', employee_path(employee), class: 'bg-green-200 p-1 mr-1 hover:bg-green-300 rounded-md'%>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :rate_amounts
   resources :rate_classifications
   resources :employee_classifications
   resources :time_periods

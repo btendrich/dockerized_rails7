@@ -5,7 +5,7 @@ module EmployeesHelper
   end
   
   def employee_classification_color_code(employee)
-    case employee.classification
+    case employee.employee_classification.name
     when 'Basic'
       'bg-green-100'
     when 'Extra'

@@ -190,7 +190,7 @@ class EmployeesController < ApplicationController
     end
     
     def sort_field
-      ['last_name', 'first_name'].include?(params[:sort_field]) ? params[:sort_field] : 'classification'
+      ['last_name', 'first_name'].include?(params[:sort_field]) ? params[:sort_field] : 'employee_classification_id'
     end
 
     def filter_status
