@@ -33,6 +33,3790 @@ RateClassification.create(
   name: "Other",
 )
 
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.3985e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.5977e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.7965e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.25896e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.39245e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.668749e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.1992e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.11029e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.3985e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.3985e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.3985e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.4684e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.7026e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.8694e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.5051e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.7576e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.25896e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.39245e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.24362e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 1,
+  amount: 0.36917e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.3985e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.5977e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.7965e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.25896e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.39245e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.668749e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.1992e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.11029e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.3985e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.3985e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.3985e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.4684e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.7026e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.8694e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.5051e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.7576e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.25896e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.39245e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.24362e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 2,
+  amount: 0.36917e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.4085e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.6127e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.817e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.26543e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.40227e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.685468e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.2043e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.113047e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.4085e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.4085e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.4085e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.4801e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.7202e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.8911e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.5177e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.7766e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.26543e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.40227e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.24971e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.3784e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.7684e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.11526e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.15368e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "Camera", rate_classification_id: rate_classification.id, name: "Extra Camera")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 3,
+  amount: 0.63091e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.4167e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.625e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.8333e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.27074e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.41032e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.699177e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.2084e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.115308e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.4167e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.4167e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.4167e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.4897e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.7346e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.9089e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.5281e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.7922e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.27074e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.41032e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.2547e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.38597e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.7838e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.11757e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 5,
+  amount: 0.15676e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.4271e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.6406e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.8542e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.27751e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.42057e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.716657e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.2136e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.118091e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.4271e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.4271e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.4271e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.5019e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.753e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.9316e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.5413e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.812e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.27751e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.42057e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.26107e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.39562e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.8034e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.12051e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 6,
+  amount: 0.16068e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.4167e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.27074e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.699177e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.2084e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.115308e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.4167e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.4167e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.4167e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.4897e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.7346e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.9089e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.5281e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.27074e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.7838e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.11757e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.15675e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.8333e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.120555e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.73099e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.26629e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.40353e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.42898e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.42898e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.4356e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.4356e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.4356e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.12284e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.16378e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.2178e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.28306e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.28306e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.120555e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.73099e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.26629e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.40353e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.5521e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.8282e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.6534e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.4356e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.4356e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.4356e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.12284e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.16378e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.2178e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.41032e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.7922e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.2547e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.38597e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.42898e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.4356e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.5119e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.42898e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.5521e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.9503e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.8712e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.4356e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.7679e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.9502e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.8195e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.8359e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.5119e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.7679e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.625e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 4,
+  amount: 0.41032e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.6534e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.8712e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.28306e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.28306e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.8282e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.120555e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.73099e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.5521e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.8282e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.26629e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.40353e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.42898e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.42898e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.5119e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.7679e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.9502e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.4356e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.4356e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.4356e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.4356e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.12284e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.16378e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.6534e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.8712e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.2178e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.28306e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.28306e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.8568e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.12604e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.27841e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.42189e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.44851e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.44851e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.5352e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.8028e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.9934e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.4554e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.4554e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.4554e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.4554e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.12843e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.17124e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.9108e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.2277e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.29594e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.29594e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.6831e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.6522e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.8568e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.9783e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.129191e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.5e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.6685e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.10028e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.28537e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.43244e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.45972e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.45972e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.5486e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.8229e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.10183e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.4668e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.4668e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.4668e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.4668e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.8782e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.13173e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.17564e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.7002e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.9336e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.2334e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.30334e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.30334e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 9,
+  amount: 0.5e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.783356e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 10,
+  amount: 0.76425e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 11,
+  amount: 0.5e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 8,
+  amount: 0.5e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 7,
+  amount: 0.5e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.132421e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.80294e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.6852e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.10278e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.2925e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.44325e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.47121e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.47121e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.5623e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.10437e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.4785e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.4785e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.4785e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.4785e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.9002e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.13503e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.18004e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.7178e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.957e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.2393e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.31092e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.31092e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.5e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 12,
+  amount: 0.84345e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.132421e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.80294e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.6852e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.10278e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.2925e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.44325e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.47121e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.47121e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.5623e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.84345e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.10437e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.4785e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.4785e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.4785e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.4785e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.9002e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.13503e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.18004e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.7178e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.957e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.2393e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.31092e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.31092e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 13,
+  amount: 0.5e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.5764e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.8646e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.10698e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.7023e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.10535e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.9694e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.14542e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.19389e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.2452e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.31869e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.5908e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.10965e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.7199e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.107985e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.9458e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.14187e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.18916e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.5027e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.5027e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.5027e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.5027e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.7541e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.10054e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.2514e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.32666e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.49507e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.32666e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.30731e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.46569e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.49507e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.5e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.139125e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.84358875e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.4905e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.4905e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.4905e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.4905e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.7357e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.9809e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 15,
+  amount: 0.8862e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.48299e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.31869e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.29981e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.45433e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.48299e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.5e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.135732e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 14,
+  amount: 0.823014e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.6055e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.90825e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.7379e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.110685e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.9694e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.14541e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.19388e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.5153e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.5153e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.5153e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.5153e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.773e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.10306e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.2577e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.33483e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.50744e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.33483e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.31499e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.47733e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.50744e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.5e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.142603e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.864679e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BCF", rate_classification_id: rate_classification.id, name: "Basic COVID Media Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.6e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.1124e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECF", rate_classification_id: rate_classification.id, name: "Extra COVID Media Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.6e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ES", rate_classification_id: rate_classification.id, name: "Extra Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 16,
+  amount: 0.6055e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ES", rate_classification_id: rate_classification.id, name: "Extra Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.6055e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.6055e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.90825e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.1124e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.7379e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.110685e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.9694e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.14541e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.19388e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.33483e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.31499e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.47733e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.50744e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.5153e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.5153e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.5153e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.5153e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.773e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.2577e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.33483e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.50744e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.5e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.142603e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.864679e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 17,
+  amount: 0.10305e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ES", rate_classification_id: rate_classification.id, name: "Extra Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.6055e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.6055e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.90825e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.1124e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.7379e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.110685e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.9694e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.14541e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.19388e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.33483e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ECP", rate_classification_id: rate_classification.id, name: "Extra Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.31499e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "ESCP", rate_classification_id: rate_classification.id, name: "Extra Sunday Constituent Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.47733e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.50744e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.5853e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.5853e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.5853e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.5853e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.878e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.11706e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.29265e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.33483e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.50744e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.5e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.142603e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.864679e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1E", rate_classification_id: rate_classification.id, name: "Basic 1x (extra)")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.5153e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2E", rate_classification_id: rate_classification.id, name: "Basic 1.5x (extra)")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.773e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3E", rate_classification_id: rate_classification.id, name: "Basic 2x (extra)")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.10305e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "HolidayE", rate_classification_id: rate_classification.id, name: "Basic HolidayE")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 18,
+  amount: 0.5153e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.6206e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.9309e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.7563e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.11345e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.9936e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.14904e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.19872e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.5999e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.5999e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.5999e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.5999e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.8999e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.11998e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BL", rate_classification_id: rate_classification.id, name: "Basic In-Lieu-Of")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.3e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.3432e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.52013e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.3432e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.52013e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.214286e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.146168e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.886296e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 19,
+  amount: 0.11521e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E1", rate_classification_id: rate_classification.id, name: "Extra 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.6361e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E2", rate_classification_id: rate_classification.id, name: "Extra 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.95415e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E3", rate_classification_id: rate_classification.id, name: "Extra 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.12722e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E4", rate_classification_id: rate_classification.id, name: "Extra Sunday 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.7752e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "E5", rate_classification_id: rate_classification.id, name: "Extra Sunday 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.11628e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C1", rate_classification_id: rate_classification.id, name: "Extra Camera 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.10184e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C2", rate_classification_id: rate_classification.id, name: "Extra Camera 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.15276e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "C3", rate_classification_id: rate_classification.id, name: "Extra Camera 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.20368e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EP", rate_classification_id: rate_classification.id, name: "Extra Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.35178e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Extra")
+rate = Rate.find_or_create_by(short_code: "EPS", rate_classification_id: rate_classification.id, name: "Extra Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.5331333e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Holiday", rate_classification_id: rate_classification.id, name: "Basic Holiday")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.6149e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Vacation", rate_classification_id: rate_classification.id, name: "Basic Vacation")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.6149e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "Sick", rate_classification_id: rate_classification.id, name: "Basic Sick")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.6149e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B1", rate_classification_id: rate_classification.id, name: "Basic 1x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.6149e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B2", rate_classification_id: rate_classification.id, name: "Basic 1.5x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.92235e2
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "B3", rate_classification_id: rate_classification.id, name: "Basic 2x")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.12298e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BP", rate_classification_id: rate_classification.id, name: "Basic Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.35178e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPS", rate_classification_id: rate_classification.id, name: "Basic Sunday Performance")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.5331333e3
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "CSF", rate_classification_id: rate_classification.id, name: "Basic Cafe Grievance Settlement Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.5e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BPF", rate_classification_id: rate_classification.id, name: "Basic Photo Fee")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.149822e4
+)
+
+rate_classification = RateClassification.find_or_create_by(name: "Basic")
+rate = Rate.find_or_create_by(short_code: "BQB", rate_classification_id: rate_classification.id, name: "Basic Quarterly Buyout")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: 20,
+  amount: 0.1e1
+)
+
 Employee.create(
   id: 1,
   last_name: "Ferrante",

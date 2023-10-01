@@ -19,27 +19,19 @@ class TimePeriodsController < ApplicationController
   def create
     @time_period = TimePeriod.new(time_period_params)
 
-    respond_to do |format|
-      if @time_period.save
-        format.html { redirect_to time_period_url(@time_period), notice: "Time period was successfully created." }
-        format.json { render :show, status: :created, location: @time_period }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @time_period.errors, status: :unprocessable_entity }
-      end
+    if @time_period.save
+      redirect_to time_period_url(@time_period), notice: "Time period was successfully created."
+    else
+      render :new, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /time_periods/1 or /time_periods/1.json
   def update
-    respond_to do |format|
-      if @time_period.update(time_period_params)
-        format.html { redirect_to time_period_url(@time_period), notice: "Time period was successfully updated." }
-        format.json { render :show, status: :ok, location: @time_period }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @time_period.errors, status: :unprocessable_entity }
-      end
+    if @time_period.update(time_period_params)
+      redirect_to time_period_url(@time_period), notice: "Time period was successfully updated."
+    else
+      render :edit, status: :unprocessable_entity
     end
   end
 
@@ -47,10 +39,7 @@ class TimePeriodsController < ApplicationController
   def destroy
     @time_period.destroy
 
-    respond_to do |format|
-      format.html { redirect_to time_periods_url, notice: "Time period was successfully destroyed." }
-      format.json { head :no_content }
-    end
+    redirect_to time_periods_url, notice: "Time period was successfully destroyed."
   end
 
   private

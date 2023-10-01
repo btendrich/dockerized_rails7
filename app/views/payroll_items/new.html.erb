@@ -1,0 +1,14 @@
+<%- title 'New Payroll Item' %>
+<div class="mx-auto w-full pb-6 text-right">
+    <%= link_to 'Payroll Item List', payroll_items_path, class: "ml-2 rounded-lg py-2 px-2 bg-gray-100 inline-block font-medium" %>
+</div>
+
+<div class="mx-auto w-full pb-6">
+	<span class="text-4xl font-semibold">Create New Payroll Item</span>
+</div>
+
+
+<div class="mx-auto md:w-2/3 w-full">
+  <%= render "form", payroll_item: @payroll_item %>
+</div>
+

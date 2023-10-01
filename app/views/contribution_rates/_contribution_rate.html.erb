@@ -1,0 +1,32 @@
+<div id="<%= dom_id contribution_rate %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Time period:</strong>
+    <%= contribution_rate.time_period_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Rate classification:</strong>
+    <%= contribution_rate.rate_classification_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Employee classification:</strong>
+    <%= contribution_rate.employee_classification_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= contribution_rate.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Rate:</strong>
+    <%= contribution_rate.rate %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this contribution rate", contribution_rate, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this contribution rate', edit_contribution_rate_path(contribution_rate), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

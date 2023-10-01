@@ -1,0 +1,158 @@
+<%= form_with(model: payroll_item, class: "w-full max-w-lg") do |form| %>
+
+  <div class="md:flex md:items-center mt-6 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :payroll_id, 'Payroll', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+			<%= form.select :payroll_id, Payroll.ordered_list.map{ |x| [x.full_name, x.id]}, {prompt: true}, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% payroll_item.errors.full_messages_for(:payroll_id).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-6 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :source_hour_id, 'Source Hour', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+			<%= link_to "Hour #{payroll_item.source_hour_id}", hour_path(payroll_item.source_hour)%>( <%= payroll_item.source_hour.date %> )
+      <%= form.hidden_field :source_hour_id, maxlength: 255, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% payroll_item.errors.full_messages_for(:source_hour_id).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-6 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :date, 'Date', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.date_field :date, maxlength: 32, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% payroll_item.errors.full_messages_for(:date).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :employee_id, 'Employee', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+			<%= form.select :employee_id, Employee.ordered_list.map{ |x| [x.full_name, x.id]}, {prompt: true}, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% payroll_item.errors.full_messages_for(:employee_id).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-6 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :source_rate_id, 'Source Rate', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+			<%= link_to payroll_item.source_rate.name, rate_path(payroll_item.source_rate) %>
+      <%= form.hidden_field :source_rate_id, maxlength: 255, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% payroll_item.errors.full_messages_for(:source_rate_id).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-6 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :name, 'Rate Name', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :name, maxlength: 255, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% payroll_item.errors.full_messages_for(:name).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :short_code, 'Short Code', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :short_code, maxlength: 255, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% payroll_item.errors.full_messages_for(:short_code).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-6 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :source_rate_amount_id, 'Source Rate Amount', class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+			<%= link_to number_to_currency(payroll_item.source_rate_amount.amount), rate_amount_path(payroll_item.source_rate_amount) %>
+      <%= form.hidden_field :source_rate_amount_id, maxlength: 255, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% payroll_item.errors.full_messages_for(:source_rate_amount_id).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :amount, 'Amount', maxlength: 64, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :amount, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% payroll_item.errors.full_messages_for(:amount).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :quantity, 'Quantity', maxlength: 2, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_field :quantity, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% payroll_item.errors.full_messages_for(:quantity).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :amount, 'Amount', maxlength: 2, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+			Caluted (was: <%= number_to_currency payroll_item.amount %>)
+			<% payroll_item.errors.full_messages_for(:amount).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mt-0 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :correction, 'Correction', maxlength: 10, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+			<%= form.check_box :correction, class: 'bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500' %>
+			<% payroll_item.errors.full_messages_for(:correction).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+
+
+  <div class="md:flex md:items-center mt-6 mb-1">
+    <div class="md:w-1/3">
+      <%= form.label :notes, class: 'block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4' %>
+    </div>
+    <div class="md:w-2/3">
+      <%= form.text_area :notes, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+			<% payroll_item.errors.full_messages_for(:notes).each do |error_message| %>
+			  <p class="text-red-500 text-xs italic"><%= error_message %></p>
+			<% end %>
+    </div>
+  </div>
+
+  <div class="md:flex md:items-center">
+    <div class="md:w-1/3"></div>
+    <div class="md:w-2/3">
+      <%= form.button class: "shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded", type: 'submit' %>
+    </div>
+  </div>
+<% end %>

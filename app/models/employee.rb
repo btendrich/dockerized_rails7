@@ -63,4 +63,8 @@ class Employee < ApplicationRecord
     result
   end
   
+  def self.ordered_list 
+    Employee.all.order(:employee_classification_id).order(:last_name).order(:first_name)
+  end
+  
 end

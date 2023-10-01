@@ -1,0 +1,14 @@
+<%- title "Edit Hour - #{@hour.id}" %>
+<div class="mx-auto w-full pb-6 text-right">
+    <%= link_to 'Show Record', @hour, class: "mt-2 rounded-lg py-2 px-2 bg-blue-300 inline-block font-medium" %>
+    <%= link_to 'Hour List', hours_path, class: "ml-2 rounded-lg py-2 px-2 bg-gray-100 inline-block font-medium" %>
+</div>
+
+<div class="mx-auto w-full pb-6">
+	<span class="text-4xl font-semibold">Hour: <%= @hour %></span>
+</div>
+
+
+<div class="mx-auto md:w-2/3 w-full">
+  <%= render "form", hour: @hour %>
+</div>

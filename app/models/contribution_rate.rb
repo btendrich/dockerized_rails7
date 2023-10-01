@@ -1,0 +1,2 @@
+class ContributionRate < ApplicationRecord
+end

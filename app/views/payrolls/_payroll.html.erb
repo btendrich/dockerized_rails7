@@ -1,0 +1,27 @@
+<div id="<%= dom_id payroll %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Week ending:</strong>
+    <%= payroll.week_ending %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= payroll.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Submitted:</strong>
+    <%= payroll.submitted %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Reconciled:</strong>
+    <%= payroll.reconciled %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this payroll", payroll, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this payroll', edit_payroll_path(payroll), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

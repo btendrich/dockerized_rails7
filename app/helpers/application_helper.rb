@@ -21,7 +21,7 @@ module ApplicationHelper
   end
     
   def sortable_link_for( field, text: field.to_s.humanize, class: "", type: :generic)
-    if params[:sort_field] == field.to_s
+    if params.permit(:sort_field)[:sort_field] == field.to_s
       link_to params.merge(:sort_field => field.to_s, :sort_direction => opposite_direction(sort_direction)).permit(:sort_field, :sort_direction) do
         (text + " " + icon(SORT_ICONS[type][sort_direction.to_sym][0], SORT_ICONS[type][sort_direction.to_sym][1])).html_safe
       end

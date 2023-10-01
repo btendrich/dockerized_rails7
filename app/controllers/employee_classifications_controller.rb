@@ -19,27 +19,19 @@ class EmployeeClassificationsController < ApplicationController
   def create
     @employee_classification = EmployeeClassification.new(employee_classification_params)
 
-    respond_to do |format|
-      if @employee_classification.save
-        format.html { redirect_to employee_classification_url(@employee_classification), notice: "Employee classification was successfully created." }
-        format.json { render :show, status: :created, location: @employee_classification }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @employee_classification.errors, status: :unprocessable_entity }
-      end
+    if @employee_classification.save
+      redirect_to employee_classification_url(@employee_classification), notice: "Employee classification was successfully created."
+    else
+      render :new, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /employee_classifications/1 or /employee_classifications/1.json
   def update
-    respond_to do |format|
-      if @employee_classification.update(employee_classification_params)
-        format.html { redirect_to employee_classification_url(@employee_classification), notice: "Employee classification was successfully updated." }
-        format.json { render :show, status: :ok, location: @employee_classification }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @employee_classification.errors, status: :unprocessable_entity }
-      end
+    if @employee_classification.update(employee_classification_params)
+      redirect_to employee_classification_url(@employee_classification), notice: "Employee classification was successfully updated."
+    else
+      render :edit, status: :unprocessable_entity
     end
   end
 
@@ -47,10 +39,7 @@ class EmployeeClassificationsController < ApplicationController
   def destroy
     @employee_classification.destroy
 
-    respond_to do |format|
-      format.html { redirect_to employee_classifications_url, notice: "Employee classification was successfully destroyed." }
-      format.json { head :no_content }
-    end
+    redirect_to employee_classifications_url, notice: "Employee classification was successfully destroyed."
   end
 
   private

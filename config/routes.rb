@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :payrolls
+  resources :contribution_rates
+  resources :payroll_items
+  resources :paychecks
+  resources :hours
+  resources :rates
   resources :rate_amounts
   resources :rate_classifications
   resources :employee_classifications

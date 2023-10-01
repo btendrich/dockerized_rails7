@@ -48,6 +48,20 @@ RateClassification.create(
 EOF
 end
 
+####################### rates ####################
+rates = DB[:rates]
+rates.each do |row|
+  lines << <<-EOF
+rate_classification = RateClassification.find_or_create_by(name: "#{row[:classification]}")
+rate = Rate.find_or_create_by(short_code: "#{row[:short_code]}", rate_classification_id: rate_classification.id, name: "#{row[:classification]} #{row[:name]}")
+RateAmount.create( 
+  rate_id: rate.id,
+  time_period_id: #{row[:time_period_id]},
+  amount: #{row[:amount]}
+)
+EOF
+end
+
 
 #################### employees ##################
 $logger.info "Starting generation of 'employees' seed data..."

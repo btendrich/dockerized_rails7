@@ -1,0 +1,72 @@
+<div id="<%= dom_id payroll_item %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Source hour:</strong>
+    <%= payroll_item.source_hour_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Payroll:</strong>
+    <%= link_to payroll_item.payroll.full_name, payroll_path(payroll_item.payroll) %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Employee:</strong>
+    <%= link_to payroll_item.employee.full_name, employee_path(payroll_item.employee) %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Source rate:</strong>
+    <%= payroll_item.source_rate_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Source rate amount:</strong>
+    <%= payroll_item.source_rate_amount_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= payroll_item.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Date:</strong>
+    <%= payroll_item.date %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Short Code:</strong>
+    <%= payroll_item.short_code %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Amount:</strong>
+    <%= number_to_currency payroll_item.amount %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Quantity:</strong>
+    <%= payroll_item.quantity %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Total:</strong>
+    <%= number_to_currency payroll_item.total %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Correction:</strong>
+    <%= payroll_item.correction %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Notes:</strong>
+    <%= payroll_item.notes %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this payroll item", payroll_item, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this payroll item', edit_payroll_item_path(payroll_item), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

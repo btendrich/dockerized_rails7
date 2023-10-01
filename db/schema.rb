@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_16_002638) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_21_141933) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "contribution_rates", force: :cascade do |t|
+    t.integer "time_period_id"
+    t.integer "rate_classification_id"
+    t.integer "employee_classification_id"
+    t.string "name"
+    t.decimal "rate"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "employee_classifications", force: :cascade do |t|
     t.string "name"
@@ -42,8 +52,77 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_16_002638) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "hours", force: :cascade do |t|
+    t.date "date"
+    t.integer "hour"
+    t.datetime "when"
+    t.integer "employee_id"
+    t.integer "rate_id"
+    t.decimal "quantity"
+    t.boolean "correction"
+    t.text "notes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "paychecks", force: :cascade do |t|
+    t.integer "employee_id"
+    t.date "week_ending"
+    t.decimal "gross"
+    t.boolean "reconciled"
+    t.text "notes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "payroll_items", force: :cascade do |t|
+    t.integer "source_hour_id"
+    t.integer "payroll_id"
+    t.integer "employee_id"
+    t.integer "source_rate_id"
+    t.integer "source_rate_amount_id"
+    t.decimal "amount"
+    t.decimal "quantity"
+    t.boolean "correction"
+    t.text "notes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.decimal "total"
+    t.string "name"
+    t.string "short_code"
+    t.date "date"
+  end
+
+  create_table "payrolls", force: :cascade do |t|
+    t.date "week_ending"
+    t.string "name"
+    t.boolean "submitted"
+    t.boolean "reconciled"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rate_amounts", force: :cascade do |t|
+    t.integer "rate_id"
+    t.integer "time_period_id"
+    t.decimal "amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "rate_classifications", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rates", force: :cascade do |t|
+    t.string "name"
+    t.string "short_code"
+    t.string "description"
+    t.string "uom"
+    t.integer "rate_classification_id"
+    t.integer "sort_order"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

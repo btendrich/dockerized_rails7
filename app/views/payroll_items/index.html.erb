@@ -1,0 +1,45 @@
+<%- title 'List Payroll Items' %>
+<div class="container mx-auto block">
+	<table class="table-auto w-full">
+	  <thead>
+	    <tr class='bg-teal-100'>
+				<th class='p-3 text-left' colspan="5">
+          <%= form_tag(request.path, method: "get", class: "inline", data: {controller: 'employees'}) do |f| %>
+						Payroll: <%= select_tag :payroll_id, options_for_select(payroll_list_helper, selected: params[:payroll_id]), class: "text-sm", data: {employees_target: 'status', action: 'employees#filter_status_update'}%>
+          <% end %>
+
+
+
+				</th>
+			</tr>
+	    <tr class='bg-teal-100'>
+	      <th class='p-3'><%= sortable_link_for :employee_id, text: "Employee" %></th>
+	      <th class='p-3'><%= sortable_link_for :date %></th>
+	      <th class='p-3'><%= sortable_link_for :name %> / <%= sortable_link_for :short_code, text: 'Code' %></th>
+	      <th class='p-3'><%= sortable_link_for :quantity %></th>
+	      <th class='p-3 w-1/5 text-right'><%= link_to 'New Payroll Item', new_payroll_item_path, class: 'bg-teal-600 text-gray-100 p-2 mr-2 hover:bg-teal-700 rounded-xl'%></th>
+	    </tr>
+	  </thead>
+	  <tbody>
+			<% @payroll_items.each do |payroll_item| %>
+	    <tr class='bg-gray-100 hover:bg-gray-200'>
+	      <td class='p-1.5'><%= payroll_item.employee.full_name %></td>
+	      <td class='p-1.5'><%= payroll_item.date %></td>
+	      <td class='p-1.5'><%= payroll_item.name %> / <%= payroll_item.short_code %></td>
+	      <td class='p-1.5'><%= payroll_item.quantity %></td>
+	      <td class='p-1.5 text-right'>
+	      	<%= link_to 'Show', payroll_item_path(payroll_item), class: 'bg-green-200 p-1 mr-1 hover:bg-green-300 rounded-md'%>
+	      	<%= link_to 'Edit', edit_payroll_item_path(payroll_item), class: 'bg-blue-200 p-1 mr-1 hover:bg-blue-300 rounded-md'%>
+	      	<%= link_to 'Destroy', payroll_item_path(payroll_item), data: { "turbo-method": :delete, turbo_confirm: 'Are you sure?' }, class: 'bg-red-200 p-1 mr-1 hover:bg-red-300 rounded-md'%>
+				</td>
+	    </tr>
+			<% end %>
+	  </tbody>
+	</table>
+
+<div class="flex mt-3 items-center justify-center space-x-4 w-full">
+  <%== pagy_nav(@pagy) %>
+</div>
+<p class="text-center mt-3 text-gray-500"><%== pagy_info @pagy %></p>
+
+</div>

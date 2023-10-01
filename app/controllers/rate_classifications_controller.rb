@@ -19,27 +19,19 @@ class RateClassificationsController < ApplicationController
   def create
     @rate_classification = RateClassification.new(rate_classification_params)
 
-    respond_to do |format|
-      if @rate_classification.save
-        format.html { redirect_to rate_classification_url(@rate_classification), notice: "Rate classification was successfully created." }
-        format.json { render :show, status: :created, location: @rate_classification }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @rate_classification.errors, status: :unprocessable_entity }
-      end
+    if @rate_classification.save
+      redirect_to rate_classification_url(@rate_classification), notice: "Rate classification was successfully created."
+    else
+      render :new, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /rate_classifications/1 or /rate_classifications/1.json
   def update
-    respond_to do |format|
-      if @rate_classification.update(rate_classification_params)
-        format.html { redirect_to rate_classification_url(@rate_classification), notice: "Rate classification was successfully updated." }
-        format.json { render :show, status: :ok, location: @rate_classification }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @rate_classification.errors, status: :unprocessable_entity }
-      end
+    if @rate_classification.update(rate_classification_params)
+      redirect_to rate_classification_url(@rate_classification), notice: "Rate classification was successfully updated."
+    else
+      render :edit, status: :unprocessable_entity
     end
   end
 
@@ -47,10 +39,7 @@ class RateClassificationsController < ApplicationController
   def destroy
     @rate_classification.destroy
 
-    respond_to do |format|
-      format.html { redirect_to rate_classifications_url, notice: "Rate classification was successfully destroyed." }
-      format.json { head :no_content }
-    end
+    redirect_to rate_classifications_url, notice: "Rate classification was successfully destroyed."
   end
 
   private

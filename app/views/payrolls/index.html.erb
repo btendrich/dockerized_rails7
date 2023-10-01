@@ -1,0 +1,48 @@
+<%- title 'List Payrolls' %>
+<div class="container mx-auto block">
+	<table class="table-auto w-full">
+	  <thead>
+	    <tr class='bg-teal-100'>
+	      <th class='p-3 w-1/5'><%= sortable_link_for :week_ending, text: "Week Ending" %></th>
+	      <th class='p-3 w-1/5'><%= sortable_link_for :name, type: :alpha %></th>
+	      <th class='p-3 w-1/5'><%= sortable_link_for :submitted %></th>
+	      <th class='p-3 w-1/5'><%= sortable_link_for :reconciled %></th>
+	      <th class='p-3 w-1/5 text-right'><%= link_to 'New Payroll', new_payroll_path, class: 'bg-teal-600 text-gray-100 p-2 mr-2 hover:bg-teal-700 rounded-xl'%></th>
+	    </tr>
+	  </thead>
+	  <tbody>
+			<% @payrolls.each do |payroll| %>
+	    <tr class='bg-gray-100 hover:bg-gray-200'>
+	      <td class='p-1.5'><%= payroll.week_ending %></td>
+	      <td class='p-1.5'><%= payroll.name %></td>
+	      <td class='p-1.5 text-center'>
+					<% if payroll.submitted %>
+					<button class="w-1/2 bg-green-200">Submitted</button>
+					<% else %>
+					<button class="w-1/2 bg-yellow-200">Not Submitted</button>
+					<% end %>
+				</td>
+	      <td class='p-1.5 text-center'>
+					<% if payroll.reconciled %>
+					<button class="w-1/2 bg-green-200">Reconciled</button>
+					<% else %>
+					<button class="w-1/2 bg-yellow-200">Not Reconciled</button>
+					<% end %>
+				</td>
+	      <td class='p-1.5 text-right'>
+	      	<%= link_to 'Items', payroll_items_path + "?payroll_id=#{payroll.id}", class: 'bg-green-200 p-1 mr-1 hover:bg-green-300 rounded-md'%>
+	      	<%= link_to 'Show', payroll_path(payroll), class: 'bg-green-200 p-1 mr-1 hover:bg-green-300 rounded-md'%>
+	      	<%= link_to 'Edit', edit_payroll_path(payroll), class: 'bg-blue-200 p-1 mr-1 hover:bg-blue-300 rounded-md'%>
+	      	<%= link_to 'Destroy', payroll_path(payroll), data: { "turbo-method": :delete, turbo_confirm: 'Are you sure?' }, class: 'bg-red-200 p-1 mr-1 hover:bg-red-300 rounded-md'%>
+				</td>
+	    </tr>
+			<% end %>
+	  </tbody>
+	</table>
+
+<div class="flex mt-3 items-center justify-center space-x-4 w-full">
+  <%== pagy_nav(@pagy) %>
+</div>
+<p class="text-center mt-3 text-gray-500"><%== pagy_info @pagy %></p>
+
+</div>

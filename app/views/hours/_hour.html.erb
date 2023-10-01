@@ -1,0 +1,47 @@
+<div id="<%= dom_id hour %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Date:</strong>
+    <%= hour.date %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Hour:</strong>
+    <%= hour.hour %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">When:</strong>
+    <%= hour.when %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Employee:</strong>
+    <%= hour.employee_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Rate:</strong>
+    <%= hour.rate_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Quantity:</strong>
+    <%= hour.quantity %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Correction:</strong>
+    <%= hour.correction %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Notes:</strong>
+    <%= hour.notes %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this hour", hour, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this hour', edit_hour_path(hour), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
