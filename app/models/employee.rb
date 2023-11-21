@@ -1,9 +1,8 @@
-class Employee < ApplicationRecord
-  ORGANIZATIONS = ['None','Local 1','ACT','IATSE','Other']
 =begin
+  create_table "employees", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.string "classification"
+    t.integer "employee_classification_id"
     t.string "address1"
     t.string "address2"
     t.string "city"
@@ -20,24 +19,11 @@ class Employee < ApplicationRecord
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
 =end
 
-#  validates :first_name, length: {in: 2..32 }
-#  validates :last_name, length: {in: 2..32 }
-#  validates :classification, inclusion: {in: CLASSIFICATIONS}
-#  validates :address1, length: {maximum: 255}
-#  validates :address2, length: {maximum: 255}
-#  validates :city, length: {maximum: 64}
-#  validates :state, length: {maximum: 2}
-#  validates :zip, length: {maximum: 10}
-#  validates :phone, length: {maximum: 10}
-#  validates :email, length: {maximum: 255}
-#  validates :affiliation_organization, inclusion: {in: ORGANIZATIONS}
-#  validates :affiliation_card_number, length: {maximum: 64}
-#  validates :payroll_code, length: {maximum: 64}
-#  validates :keycard_number, length: {maximum: 64}
-#  validates :dob, comparison: { less_than_or_equal_to: (Date.today - 18.years), message: 'must be at least 18 years old' }, unless: Proc.new { |a| a.dob.blank? }
-  
+class Employee < ApplicationRecord
+  ORGANIZATIONS = ['None','Local 1','ACT','IATSE','Other']
   scope :active, -> { where(payroll_active: true) }
   scope :inactive, -> { where(payroll_active: false) }  
   
@@ -61,6 +47,17 @@ class Employee < ApplicationRecord
       end
     end
     result
+  end
+  
+  def address
+    return address1 if address2.empty?
+    return address2 if address1.empty?
+    return "#{address1}, #{address2}"
+  end
+  
+  def city_state_zip
+    return "#{city}, #{state} #{zip}" if !city.empty? && !state.empty? && !zip.empty?
+    ""
   end
   
   def self.ordered_list 
